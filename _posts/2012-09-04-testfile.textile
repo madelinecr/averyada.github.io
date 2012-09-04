@@ -1,0 +1,4 @@
+h1. Welcome to my personal blog!
+
+This blog is currently a work in progress, and there isn't much to look at. I've
+got some "class notes":/notes/ up for you to look at, more coming.

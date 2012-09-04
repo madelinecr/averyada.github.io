@@ -1,0 +1,24 @@
+a {
+  color: #3f3f3f;
+}
+
+a:visited {
+  color: #4f4f4f;
+}
+
+body {
+  background-color: #dedede;
+  font-family: monospace;
+}
+
+#content {
+  background-color: #bebebe;
+  margin: auto;
+  padding: 0.2em 1em 0.2em 1em;
+  width: 800px;
+}
+
+.post-title {
+  text-align: center;
+  border-bottom: dashed 1px;
+}
