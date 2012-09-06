@@ -11,6 +11,13 @@ body {
   font-family: monospace;
 }
 
+pre {
+  padding: 0.2em;
+  width: 80ex;
+  margin: auto;
+  background-color: #cecece;
+}
+
 #content {
   background-color: #bebebe;
   margin: auto;
