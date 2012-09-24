@@ -7,25 +7,30 @@ a:visited {
 }
 
 body {
-  background-color: #dedede;
-  font-family: monospace;
+  margin: 0;
+  font: "Georgia", monospace;
 }
 
 pre {
   padding: 0.2em;
   width: 80ex;
   margin: auto;
-  background-color: #cecece;
+}
+
+#site-title {
+  padding: 1em;
+  margin: 0;
+  font-weight: normal;
 }
 
 #content {
-  background-color: #bebebe;
   margin: auto;
+  margin-top: 1em;
   padding: 0.2em 1em 0.2em 1em;
   width: 800px;
 }
 
 .post-title {
+  font-weight: normal;
   text-align: center;
-  border-bottom: dashed 1px;
 }
