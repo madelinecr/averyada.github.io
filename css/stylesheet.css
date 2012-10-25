@@ -56,12 +56,14 @@ hr {
 #site-header {
   height: 200px;
   background: url(../img/title.png);
+  background-position: 100px 0px;
 }
 
 #navigation {
-  width: 311px;
+  width: 211px; /* Golden ratio is 800=311+489 */
   float: left;
-  padding-left: 80px;
+  padding-right: 80px;
+  text-align: right;
 }
 
 #navigation a {
@@ -72,5 +74,5 @@ hr {
 }
 
 #content {
-  padding-left: 391px;
+  padding-left: 291px; // when following golden ratio, should be 391px
 }
