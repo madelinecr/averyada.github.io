@@ -3,7 +3,12 @@ title: Fun with Nokogiri and XKCD
 ---
 
 I was bored and decided to play around with XPath and see what I could quickly
-script up in a half hour or so. Below is the result.
+script up in a half hour or so.
+
+I decided doing some kind of scraping would be a fun little mini-project, so I
+set my sights on scraping down the comic images from the XKCD site.
+
+Here's the code.
 
     #!/usr/bin/env ruby
     require 'open-uri'
