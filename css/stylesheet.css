@@ -32,13 +32,16 @@ body {
 
 pre {
   margin-left: 1em;
-  background-color: #eee;
+  background-color: #ddd;
   padding: 1em;
   border-radius: 15px;
 }
 
 code {
   font-family: terminus;
+  background-color: #ddd;
+  padding: 0.1em;
+  border-radius: 5px;
   font-size: 12pt;
 }
 
