@@ -79,9 +79,14 @@ hr {
   font-family: capsuula;
   color: black;
   display: block;
-  font-size: 42pt;
+  font-size: 32pt;
 }
 
 #content {
   padding-left: 291px; // when following golden ratio, should be 391px
 }
+
+.post-title {
+  font-size: 32pt;
+}
+
