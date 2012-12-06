@@ -13,6 +13,16 @@
   src: url(../font/Terminus.ttf);
 }
 
+@font-face {
+  font-family: entypo;
+  src: url(../font/entypo.ttf);
+}
+
+@font-face {
+  font-family: entypo-social;
+  src: url(../font/entypo-social.ttf);
+}
+
 html {
   padding: 0;
   width: 1024px;
@@ -51,6 +61,18 @@ code {
   font-size: 12pt;
 }
 
+footer {
+  color: gray;
+  font-size: 12px;
+  text-align: right;
+  margin: 1em;
+  padding: 1em;
+}
+
+footer a {
+  color: #666;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   font-family: capsuula;
@@ -71,15 +93,46 @@ hr {
 #navigation {
   width: 211px; /* Golden ratio is 800=311+489 */
   float: left;
-  padding-right: 80px;
+  padding-left: 50px;
   text-align: right;
 }
 
 #navigation a {
   font-family: capsuula;
   color: black;
+  text-decoration: none;
   display: block;
   font-size: 32pt;
+}
+
+#navigation a:hover:after {
+  color: black;
+}
+
+#navigation a:hover span {
+  text-decoration: underline;
+  color: black;
+}
+
+#github:after {
+  font-family: entypo-social;
+  margin-left: 0.4em;
+  color: lightgray;
+  content: "\F300";
+}
+
+#dotfiles:after {
+  font-family: entypo;
+  margin-left: 0.4em;
+  color: lightgray;
+  content: "\23F6";
+}
+
+#rubychan:after {
+  font-family: entypo;
+  margin-left: 0.4em;
+  color: lightgray;
+  content: "\1F4E5";
 }
 
 #content {
