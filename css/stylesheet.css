@@ -115,10 +115,10 @@ hr {
 }
 
 #github:after {
-  font-family: entypo-social;
+  font-family: entypo;
   margin-left: 0.4em;
   color: lightgray;
-  content: "\F300";
+  content: "\1F56A";
 }
 
 #dotfiles:after {
