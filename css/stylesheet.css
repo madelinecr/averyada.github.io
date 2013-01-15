@@ -80,6 +80,14 @@ h1, h2, h3, h4, h5 {
   font-size: 48pt;
 }
 
+.post-date {
+  font-size: 10pt;
+  padding: 3px;
+  margin-top: -32px;
+  margin-right: 20px;
+  float: right;
+}
+
 hr {
   display: none;
 }
