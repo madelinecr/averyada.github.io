@@ -61,6 +61,11 @@ code {
   font-size: 12pt;
 }
 
+#content img {
+  padding-left: 1em;
+  float: right;
+}
+
 footer {
   color: gray;
   font-size: 12px;
