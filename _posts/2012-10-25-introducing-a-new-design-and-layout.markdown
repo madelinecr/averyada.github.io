@@ -1,5 +1,5 @@
 ---
-title: Introducing a New Minimal Design
+title: Introducing My New Minimal Design
 ---
 
 Recently I've been focusing a lot on the front end presentation of this website,
