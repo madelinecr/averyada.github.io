@@ -147,6 +147,10 @@ hr {
   padding-left: 291px; // when following golden ratio, should be 391px
 }
 
+#footerquote {
+  float: left;
+}
+
 .post-title {
   font-size: 32pt;
 }
