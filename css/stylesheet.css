@@ -36,6 +36,7 @@ body {
   font-family: exo;
   font-size: 11pt;
   padding: 0;
+  background-color: #f9f9f9;
   margin: 0;
   height: 100%;
 }
@@ -61,7 +62,11 @@ code {
   font-size: 12pt;
 }
 
-#content img {
+.post-content {
+  text-align: justify;
+}
+
+.post-content img {
   padding-left: 1em;
   float: right;
 }
@@ -85,12 +90,26 @@ h1, h2, h3, h4, h5 {
   font-size: 48pt;
 }
 
+.post {
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 3em;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
+}
+
 .post-date {
   font-size: 10pt;
   padding: 3px;
-  margin-top: -32px;
+  margin-top: -50px;
   margin-right: 20px;
   float: right;
+}
+
+.post-date img {
+  float: left;
+  margin-top: -4px;
+  margin-right: 5px;
 }
 
 hr {
@@ -100,13 +119,13 @@ hr {
 #site-header {
   height: 200px;
   background: url(../img/title.png);
-  background-position: 100px 0px;
+  margin-left: 120px;
+  background-position: 50px 0px;
 }
 
 #navigation {
   width: 211px; /* Golden ratio is 800=311+489 */
   float: left;
-  padding-left: 50px;
   text-align: right;
 }
 
@@ -149,7 +168,7 @@ hr {
 }
 
 #content {
-  padding-left: 291px; // when following golden ratio, should be 391px
+  padding-left: 241px; // when following golden ratio, should be 391px
 }
 
 #footerquote {
