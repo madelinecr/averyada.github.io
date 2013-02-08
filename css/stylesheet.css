@@ -36,7 +36,7 @@ body {
   font-family: exo;
   font-size: 11pt;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   margin: 0;
   height: 100%;
 }
@@ -62,6 +62,19 @@ code {
   font-size: 12pt;
 }
 
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #232323;
+}
+
 .post-content {
   text-align: justify;
 }
@@ -69,6 +82,17 @@ code {
 .post-content img {
   padding-left: 1em;
   float: right;
+}
+
+footer.post-footer {
+  margin: 0;
+  padding: 0;
+}
+
+footer.post-footer a {
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #444444;
 }
 
 footer {
@@ -92,7 +116,7 @@ h1, h2, h3, h4, h5 {
 
 .post {
   background-color: #fff;
-  padding: 2em;
+  padding: 2em 3em 2em 3em;
   margin-bottom: 3em;
   border-right: 2px solid #d9d9d9;
   border-bottom: 3px solid #d9d9d9;
@@ -144,6 +168,13 @@ hr {
 #navigation a:hover span {
   text-decoration: underline;
   color: black;
+}
+
+#home:after {
+  font-family: entypo;
+  margin-left: 0.4em;
+  color: lightgray;
+  content: "\1F4F0";
 }
 
 #github:after {

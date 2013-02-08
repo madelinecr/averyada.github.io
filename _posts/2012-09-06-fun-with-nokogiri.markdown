@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Fun with Nokogiri and XKCD
 ---
 

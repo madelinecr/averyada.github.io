@@ -1,4 +1,5 @@
 ---
+layout: post
 title: The Tao of Pooh
 ---
 
@@ -8,7 +9,7 @@ satisfying my curiosity. I'm especially likely to impulsively buy a title like
 this when it's brief enough I know I'll be able to finish it in a couple
 sittings.
 
-![The Tao of Pooh](img/thumb_tao_of_pooh.jpg)
+![The Tao of Pooh](/img/thumb_tao_of_pooh.jpg)
 
 The Tao of Pooh is a book which attempts to explain Taoism through the
 characters and events in Winnie The Pooh. This truly shows itself to be a great

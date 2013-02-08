@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Introducing My New Minimal Design
 ---
 

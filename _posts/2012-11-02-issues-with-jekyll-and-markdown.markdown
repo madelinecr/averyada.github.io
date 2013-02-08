@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Issues with Jekyll and Markdown
 ---
 
