@@ -75,6 +75,82 @@ a:visited {
   color: #232323;
 }
 
+#site-header {
+  height: 200px;
+  margin-left: 78px;
+  background: url(../img/title.png);
+  background-position: 50px 0px;
+}
+
+#navigation {
+  /*width: 211px; /* Golden ratio is 800=311+489 */
+  margin-top: -40px;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+#navigation a {
+  font-family: capsuula;
+  color: black;
+  text-decoration: none;
+  display: inline;
+  font-size: 32pt;
+}
+
+#navigation a:hover:before {
+  color: black;
+}
+
+#navigation a:hover span {
+  text-decoration: underline;
+  color: black;
+}
+
+#home:before {
+  font-family: entypo;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: lightgray;
+  content: "\1F4F0";
+}
+
+#github:before {
+  font-family: entypo;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: lightgray;
+  content: "\1F56A";
+}
+
+#dotfiles:before {
+  font-family: entypo;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: lightgray;
+  content: "\23F6";
+}
+
+#rubychan:before {
+  font-family: entypo;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: lightgray;
+  content: "\1F4E5";
+}
+
+#content {
+  width: 780px;
+  margin: auto;
+}
+
+#footerquote {
+  float: left;
+}
+
+.post-title {
+  font-size: 32pt;
+}
+
 .post-content {
   text-align: justify;
   padding: 1em 3em 1em 3em;
@@ -148,7 +224,7 @@ h1, h2, h3, h4, h5 {
 .post {
   background-color: #fff;
   padding: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
   border-right: 2px solid #d9d9d9;
   border-bottom: 3px solid #d9d9d9;
 }
@@ -170,74 +246,3 @@ h1, h2, h3, h4, h5 {
 hr {
   display: none;
 }
-
-#site-header {
-  height: 200px;
-  background: url(../img/title.png);
-  margin-left: 120px;
-  background-position: 50px 0px;
-}
-
-#navigation {
-  width: 211px; /* Golden ratio is 800=311+489 */
-  float: left;
-  text-align: right;
-}
-
-#navigation a {
-  font-family: capsuula;
-  color: black;
-  text-decoration: none;
-  display: block;
-  font-size: 32pt;
-}
-
-#navigation a:hover:after {
-  color: black;
-}
-
-#navigation a:hover span {
-  text-decoration: underline;
-  color: black;
-}
-
-#home:after {
-  font-family: entypo;
-  margin-left: 0.4em;
-  color: lightgray;
-  content: "\1F4F0";
-}
-
-#github:after {
-  font-family: entypo;
-  margin-left: 0.4em;
-  color: lightgray;
-  content: "\1F56A";
-}
-
-#dotfiles:after {
-  font-family: entypo;
-  margin-left: 0.4em;
-  color: lightgray;
-  content: "\23F6";
-}
-
-#rubychan:after {
-  font-family: entypo;
-  margin-left: 0.4em;
-  color: lightgray;
-  content: "\1F4E5";
-}
-
-#content {
-  padding-left: 241px; // when following golden ratio, should be 391px
-}
-
-#footerquote {
-  float: left;
-}
-
-.post-title {
-  font-size: 32pt;
-}
-
