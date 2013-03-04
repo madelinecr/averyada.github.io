@@ -1,9 +1,0 @@
----
-layout: post
-title: Welcome to stdout
----
-
-This blog is currently a work in progress, and there isn't much to look at. I've
-got some [class notes][notes] up for you to look at, more coming.
-
-[notes]: /notes/
