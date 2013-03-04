@@ -42,11 +42,10 @@ body {
 }
 
 pre {
-  margin-left: 1em;
-  background-color: #f8f8f8;
-  padding: 1em;
-  border-radius: 5px;
-  border: 1px solid #eaeaea;
+  margin: 0;
+  padding: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 pre code {
@@ -55,10 +54,7 @@ pre code {
 
 code {
   font-family: terminus;
-  background-color: #f8f8f8;
-  border: 1px solid #eaeaea;
-  padding: 0.1em 0.3em 0 0.3em;
-  border-radius: 5px;
+  margin: 0;
   font-size: 12pt;
 }
 

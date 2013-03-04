@@ -9,8 +9,7 @@ script up in a half hour or so.
 I decided doing some kind of scraping would be a fun little mini-project, so I
 set my sights on scraping down the comic images from the XKCD site.
 
-Here's the code.
-
+{% highlight ruby %}
     #!/usr/bin/env ruby
     require 'open-uri'
     require 'nokogiri'
@@ -41,6 +40,7 @@ Here's the code.
         end
       end
     end
+{% endhighlight %}
 
 The source code is also available on [github] [xkcd_scraper]. Be nice to
 Randall's server though!
