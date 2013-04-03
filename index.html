@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
   <div class="post">
     <div class="post-header">
       <a href="{{ post.url }}">
@@ -22,3 +22,23 @@ layout: default
     </footer>
   </div>
 {% endfor %}
+
+<div id="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous">&lt;&lt;</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="previous">&lt;&lt;</a>
+    {% endif %}
+  {% else %}
+    <span class="previous disabled">&lt;&lt;</span>
+  {% endif %}
+
+  <span class="page_number">{{paginator.page}} / {{paginator.total_pages}}</span>
+
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next">&gt;&gt;</a>
+  {% else %}
+    <span class="next disabled">&gt;&gt;</span>
+  {% endif %}
+</div>

@@ -1,3 +1,4 @@
 pygments: true
+paginate: 3
 redcloth:
   hard_breaks: false

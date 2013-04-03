@@ -139,6 +139,20 @@ a:visited {
   margin: auto;
 }
 
+#pagination {
+  text-align: center;
+  font-size: 26pt;
+  font-family: capsuula;
+}
+
+.page_number {
+  font-family: capsuula;
+}
+
+.disabled {
+  color: lightgray;
+}
+
 #footerquote {
   float: left;
 }
@@ -220,7 +234,7 @@ h1, h2, h3, h4, h5 {
 .post {
   background-color: #fff;
   padding: 3em;
-  margin-bottom: 5em;
+  margin: 2.5em 0 2.5em 0;
   border-right: 2px solid #d9d9d9;
   border-bottom: 3px solid #d9d9d9;
 }
