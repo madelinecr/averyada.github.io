@@ -43,9 +43,12 @@ body {
 
 pre {
   margin: 0;
+  border: 1px solid #EFEFEF;
   padding: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.4em;
+  padding-left: 0.1em;
+  padding-bottom: 0.4em;
+  overflow: auto;
 }
 
 pre code {
