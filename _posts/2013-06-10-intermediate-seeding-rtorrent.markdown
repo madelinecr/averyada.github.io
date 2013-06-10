@@ -1,5 +1,6 @@
 ---
 title: Automating Rtorrent - A Seedbox Guide
+layout: post
 ---
 Intermediate Torrenting: Running a Seedbox
 
