@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
   font-family: exo;
   src: url(../font/Exo-Regular.otf);
@@ -22,6 +24,8 @@
   font-family: entypo-social;
   src: url(../font/entypo-social.ttf);
 }
+
+/* Main elements */
 
 html {
   padding: 0;
@@ -73,6 +77,8 @@ a:hover {
 a:visited {
   color: #232323;
 }
+
+/* IDs */
 
 #site-header {
   height: 200px;
@@ -147,6 +153,8 @@ a:visited {
   font-size: 26pt;
   font-family: capsuula;
 }
+
+/* Classes */
 
 .float-left {
   display: block;
