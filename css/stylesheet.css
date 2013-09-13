@@ -148,6 +148,18 @@ a:visited {
   font-family: capsuula;
 }
 
+.float-left {
+  display: block;
+  float: left;
+  padding-right: 1em;
+}
+
+.float-right {
+  display: block;
+  float: right;
+  padding-left: 1em;
+}
+
 .page_number {
   font-family: capsuula;
 }
@@ -170,8 +182,8 @@ a:visited {
 }
 
 .post-content img {
-  padding-left: 1em;
-  float: right;
+  display: block;
+  margin: auto;
 }
 
 .post-content a {
