@@ -1,0 +1,32 @@
+---
+date: 2010-09-17 11:33:09+00:00
+layout: post
+title: GeekTool
+categories:
+- Software
+tags:
+- mac
+---
+
+Just a short post. I'm posting my GeekTools setup and a  screenshot. I'd make
+some note about my awk skills being hacky, but I  think anything ran through awk
+looks hacky.
+
+[![My geek tool setup](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)
+
+    top -l1 | awk '
+    BEGIN { ORS=" | " }
+    /CPU usage/ { print "CPU: " $3 }
+    /PhysMem/ { print "RAM Wired: " $2;
+        print "RAM Active: " $4;
+        print "RAM Used: " $6;
+        print "RAM Free: " $8 }'
+    echo ""
+    df -H | awk '
+    BEGIN { ORS=" | " }
+    /disk0s2/ { print "SSD Size: " $2;
+        print "SSD Used: " $3;
+        print "SSD Avail: " $4;
+        print "SSD Cap: " $5 }'
+    echo ""
+    ifconfig en1 | GREP inet | awk 'BEGIN { ORS=" | " } {print $1 ": " $2}'
