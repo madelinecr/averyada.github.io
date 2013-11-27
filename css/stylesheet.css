@@ -135,12 +135,12 @@ a:visited {
   content: "\23F6";
 }
 
-#rubychan:before {
+#projects:before {
   font-family: entypo;
   margin-left: 0.2em;
   margin-right: 0.2em;
   color: lightgray;
-  content: "\1F4E5";
+  content: "\E74E";
 }
 
 #content {
