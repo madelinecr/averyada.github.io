@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="posts_list">
+  {% for post in site.posts %}
+    <div class="post_date">
+      {{ post.date | date: "%d-%m-%Y" }}
+    </div>
+    <div class="post_link">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <br>
+  {% endfor %}
+</div>

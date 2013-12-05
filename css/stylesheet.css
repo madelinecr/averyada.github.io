@@ -119,6 +119,14 @@ a:visited {
   content: "\1F4F0";
 }
 
+#posts:before {
+  font-family: entypo;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  color: lightgray;
+  content: "\2630";
+}
+
 #github:before {
   font-family: entypo;
   margin-left: 0.2em;
@@ -155,6 +163,29 @@ a:visited {
 }
 
 /* Classes */
+
+.posts_list {
+  font-size: 14pt;
+  background-color: #fff;
+  padding: 3em;
+  margin: 2.5em 0 2.5em 0;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
+}
+
+.post_date {
+  font-family: capsuula;
+  text-align: right;
+  width: 125px;
+  float: left;
+}
+
+.post_link {
+  margin-left: 150px;
+  padding-left: 1em;
+  font-family: capsuula;
+
+}
 
 .project_list {
   overflow: auto;
