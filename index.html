@@ -5,12 +5,12 @@ layout: default
 {% for post in paginator.posts %}
   <div class="post">
     <div class="post-header">
+      <div class="post-date">
+        {{ post.date | date:"%d-%m-%Y" }}
+      </div>
       <a href="{{ post.url }}">
         <h1 class="post-title">{{ post.title }}</h1>
       </a>
-      <div class="post-date">
-        {{ post.date | date:"%d-%m-%Y" }}
-        </div>
     </div>
     <div class="post-content">{{ post.content }}</div>
     <footer class="post-footer">

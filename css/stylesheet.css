@@ -1,6 +1,11 @@
 /* Fonts */
 
 @font-face {
+  font-family: dejavusansmono;
+  src: url(../font/DejaVuSansMono.ttf);
+}
+
+@font-face {
   font-family: exo;
   src: url(../font/Exo-Regular.otf);
 }
@@ -37,7 +42,7 @@ html {
 }
 
 body {
-  font-family: exo;
+  font-family: Helvetica;
   font-size: 11pt;
   padding: 0;
   background-color: #EFEFEF;
@@ -60,9 +65,9 @@ pre code {
 }
 
 code {
-  font-family: terminus;
+  font-family: dejavusansmono;
   margin: 0;
-  font-size: 12pt;
+  font-size: 9pt;
 }
 
 a {
@@ -173,12 +178,6 @@ a:visited {
   border-bottom: 3px solid #d9d9d9;
 }
 
-.post_date {
-  font-family: capsuula;
-  text-align: right;
-  width: 125px;
-  float: left;
-}
 
 .post_link {
   margin-left: 150px;
@@ -309,9 +308,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .post-date {
+  font-family: exo;
   font-size: 10pt;
   padding: 3px;
-  margin-top: -50px;
   margin-right: 20px;
   float: right;
 }
