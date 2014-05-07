@@ -1,4 +1,4 @@
-pygments: true
+highlighter: pygments
 paginate: 3
 redcloth:
   hard_breaks: false
