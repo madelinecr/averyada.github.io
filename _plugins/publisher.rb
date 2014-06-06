@@ -13,7 +13,7 @@ module Jekyll
 
     def generate(site)
       @files = Dir["_publish/*"]
-      @files.each_with_index do |f,i|
+      @files.each do |f|
         now = DateTime.now
         replace(f, /---(.|\n)*---/) do |match|
           header = Psych.load(match)
