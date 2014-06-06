@@ -45,7 +45,7 @@ it tells the rust compiler that the function is a unit test. Here's an example.
 To run your application, it's pretty straightforward. Invoke the rust
 compiler, `rustc` with your source code and it'll hopefully output a binary.
 Run that binary and watch as your code runs. The test functions were ignored,
-their symbols never even added to your binary.
+their symbols never even added to your executable.
 
     λ ~/ rustc divide.rs
     λ ~/ ./divide 
