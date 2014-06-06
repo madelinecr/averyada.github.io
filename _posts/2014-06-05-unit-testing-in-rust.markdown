@@ -1,6 +1,6 @@
 ---
 date: 2014-06-05
-layout: default
+layout: post
 title: Unit Testing in Rust
 ---
 
