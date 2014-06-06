@@ -21,26 +21,32 @@ whether this is Rust best practice or not, the standard idioms for Rust code are
 still being worked out too. If functions are marked with a `#[test]` identifier,
 it tells the rust compiler that the function is a unit test. Here's an example.
 
-    fn three_divides(num: int) -> bool {
-      num % 3 == 0
-    }
+{% highlight rust %}
+fn three_divides(num: int) -> bool {
+  num % 3 == 0
+}
 
-    fn main() {
-      for num in range(1, 10) {
-        if three_divides(num) { println("Three divides " + num.to_str()) }
-        else { println("Three doesn't divide " + num.to_str()) }
-      }
-    }
+fn main() {
+  for num in range(1, 10) {
+    if three_divides(num) { println("Three divides " + num.to_str()) }
+    else { println("Three doesn't divide " + num.to_str()) }
+  }
+}
 
-    #[test]
-    fn test_three_doesnt_divide() {
-      assert!(!three_divides(2));
-    }
+#[test]
+fn test_three_doesnt_divide() {
+  assert!(!three_divides(2));
+}
 
-    #[test]
-    fn test_three_divides() {
-      assert!(three_divides(3));
-    }
+#[test]
+fn test_three_divides() {
+  assert!(three_divides(3));
+}
+{% endhighlight %}
+
+As a quick aside, notice that the statement in the function `three_divides` is
+not terminated with a semi-colon. Rust interprets this in a special way, and
+automatically returns the value of the statement as the function's result.
 
 To run your application, it's pretty straightforward. Invoke the rust
 compiler, `rustc` with your source code and it'll hopefully output a binary.
@@ -78,6 +84,9 @@ test. Obviously the reverse will fail the test.
 Having this kind of unit testing support baked right into the language is really
 nice, and I couldn't stop thinking about how convenient this kind of testing is.
 It lowers the barrier to writing tests and removes a lot of headache about
-setting up a testing framework or environment.
+setting up a testing framework or environment.  If you know some other cool
+features of the rust testing system, or I've performed a best practices faux
+pas, drop me a line on [Twitter][my_twitter].
 
 [rustlang]: http://www.rust-lang.org/
+[my_twitter]: https://www.twitter.com/bl_pace
