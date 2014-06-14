@@ -1,6 +1,7 @@
 highlighter: pygments
 markdown: kramdown
 paginate: 3
+exclude: ['README.md']
 redcloth:
   hard_breaks: false
 gems:
