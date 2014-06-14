@@ -1,3 +1,5 @@
+task :default => :dev
+
 desc "Starts jekyll optimized for general site development"
 task :dev do system('jekyll serve -w') end
 
