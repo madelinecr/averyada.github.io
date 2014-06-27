@@ -1,0 +1,45 @@
+#!/usr/bin/env ruby
+
+$DRAFT_DIR = "_drafts"
+
+##
+# Generates a yaml header for a new draft blog post. Takes +title+ as argument.
+# Checks if this +title+ is an array, and is smart about concating it down to
+# a string.
+def new_yaml_header(title)
+  if(title.class == Array); title = title.join(" "); end
+  <<-YAML
+---
+layout: post
+title: "#{title}"
+---
+  YAML
+end
+
+##
+# Creates a new draft markdown file in the _drafts folder, with a specific
+# +title+. The title is downcased and whitespace is replaced with dashes.
+def create_draft(title)
+  # Either title was quoted and the first array element needs to be concated,
+  # or it wasn't quoted and every single array element needs to be concated.
+  basename = title.length == 1 ? title[0].gsub(/\s/, "-").downcase
+                               : title.join("-").downcase
+  file = "#{$DRAFT_DIR}/#{basename}.md"
+  File.open(file, "wb") { |f| f.write(new_yaml_header(title)) }
+  puts "New post draft was created at #{file}"
+end
+
+##
+# Prints usage statistics for script.
+def usage
+  puts "Usage: #{File.basename $0} <POST TITLE>"
+  puts "There is no need to quote <POST TITLE>, it will be properly formatted"
+  puts "regardless of how it is passed to this script."
+  puts
+end
+
+if ARGV.length == 0
+  usage
+else
+  create_draft ARGV
+end
