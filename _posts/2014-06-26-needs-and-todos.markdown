@@ -68,6 +68,16 @@ ruby script, to handle switching my `todo.txt` files over to Github issues or
 Trello board items. Even then, I'll probably keep using this solution for
 personal projects and let them grow organically as the need arises.
 
+**A Quick Update**
+
+I received some feedback from a kind developer, [Jan Andersen][jan], in the
+[Programming][prog] community on Google+. Jan [pointed out][suggestion] that I
+didn't need to parse `todo.txt` line by line with bash. I could do the heavy
+lifting of formatting each output line by simply invoking `sed` instead.
+
 [ghi]: https://github.com/blog/831-issues-2-0-the-next-generation
 [tb]: https://wiki.gnome.org/Apps/Tomboy/
 [trell]: https://www.trello.com/
+[prog]: https://plus.google.com/communities/109728488971985783565
+[jan]: https://plus.google.com/+JanBruunAndersen/posts
+[suggestion]: https://plus.google.com/109182425131492855421/posts/LtJARbuuuqx
