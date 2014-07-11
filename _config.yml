@@ -1,6 +1,12 @@
+name: "stdout"
+url: "http://www.bpace.info/"
+description: "A blog about coding and technology"
+author: "Blaine Pace"
+copyright: "MIT"
 highlighter: pygments
 markdown: kramdown
 paginate: 3
+relative_permalinks: true
 exclude: ['Rakefile', 'README.md']
 redcloth:
   hard_breaks: false
