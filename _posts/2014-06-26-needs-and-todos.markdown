@@ -23,7 +23,7 @@ First, I started by writing the function `todo`:
 
 {% highlight bash %}
 function todo () {
-  echo "Searching for #TODOs..."
+  echo "Searching for TODOs..."
   grep -R "TODO" .
   if [ -e "todo.txt" ]; then
     echo "\033[32mFound todo.txt:\033[0m"
@@ -35,7 +35,7 @@ function todo () {
 {% endhighlight %}
 
 It's a really simple function, which does just two things. First, it calls grep
-with the recursive flag to search for `#TODO`s that might be hiding anywhere in
+with the recursive flag to search for `TODO`s that might be hiding anywhere in
 the current directory. Secondly, it checks for the presence of a `todo.txt` file
 and, if it exists, it prints it out with some pretty formatting.  The output
 looks like so (color codes have been stripped):

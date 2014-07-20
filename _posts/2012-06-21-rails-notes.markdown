@@ -7,8 +7,8 @@ title: Rails Notes
 Just a quick little post in case some people out there don't know about the note
 keeping feature in Rails.
 
-There's a rake task called "notes" that will search your codebase for any `#TODO`,
-`#FIXME` or `#OPTIMIZE` annotations and print them in a pretty list, like so.
+There's a rake task called "notes" that will search your codebase for any `TODO`,
+`FIXME` or `OPTIMIZE` annotations and print them in a pretty list, like so.
 
 
     $ rake notes
