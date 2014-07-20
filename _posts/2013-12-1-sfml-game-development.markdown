@@ -5,17 +5,13 @@ title: SFML Game Development
 ---
 
 Recently I was sent a review copy of [SFML Game Development][sfmlgamedev] by
-[Packt Publishing][packt]. [SFML][sfml] stands for the "Simple and Fast
-Multimedia Library", and is one of two major libraries used in 3D OpenGL
-graphics programming. The competitor to [SFML][sfml] is [SDL][sdl], which is a C
-library. Comparatively, SFML is written in C++. I'll cover an overview of the
-book's contents and a quick review.
+[Packt Publishing][packt]. SFML stands for the ["Simple and Fast Multimedia
+Library"][sfml], and is one of two major libraries used in 3D OpenGL graphics
+programming. The competitor to [SFML][sfml] is [SDL][sdl], which is a C library.
+Comparatively, SFML is written in C++. I'll cover an overview of the book's
+contents and a quick review.
 
-<div class="float-right">
-  <a href="http://www.flickr.com/photos/22878074@N03/11166836076">
-    <img src="http://farm6.staticflickr.com/5504/11166836076_ed97eec3f7_n.jpg"/>
-  </a>
-</div>
+{% include img-l.html pic="/img/sfmldev.jpg" alt="The SFML Book Cover" %}
 
 SFML is quite complex, and so is C++. This book assumes a fairly competent
 programmer who is already familiar with most of the language constructs of C++.
