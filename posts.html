@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div class="posts_list">
-  {% for post in site.posts %}
-    <div class="post-date">
-      {{ post.date | date: "%d-%m-%Y" }}
+{% for post in site.posts %}
+  <div class="row postlist-item">
+    <div class="columns small-12 medium-8 large-9 postlist-link">
+      <a href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
     </div>
-    <div class="post-link">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+    <div class="columns small-12 medium-4 large-3 postlist-date">
+      <div>{{ post.date | date: "%B %d, %Y" }}</div>
     </div>
-    <br>
-  {% endfor %}
-</div>
+  </div>
+{% endfor %}

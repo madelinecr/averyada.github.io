@@ -3,18 +3,28 @@ layout: default
 ---
 
 <div class="post">
-  <div class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-date">
-      {{ page.date | date:"%d-%m-%Y" }}
+  <!-- Post header -->
+  <div class="row">
+    <div class="columns small-12 large-uncentered large-10">
+      <a href="{{ site.baseurl }}{{ page.url }}">
+        <h1 class="post-title">{{ page.title }}</h1>
+      </a>
+    </div>
+    <div class="columns small-6 large-uncentered large-2">
+      <span class="entypo-social right">&#62222;</span>
+      <span class="entypo-social right">&#62223;</span>
+      <span class="entypo-social right">&#62217;</span>
+    </div>
+    <div class="row">
+      <div class="columns small-6 medium-6 large-centered post-date">
+        {{ page.date | date:"%B %d, %Y" }}
       </div>
+    </div>
   </div>
-  <div class="post-content">{{ content }}</div>
-  <footer class="post-footer">
-    <a href="https://twitter.com/share" class="twitter-share-button"
-      data-url="http://sensae.github.com{{ page.url }}" data-text="{{ page.title }}"
-      data-via="sensae" data-related="sensae" data-count="none">Tweet</a>
-    <script>!function(d,s,id){var
-      js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </footer>
+  <br>
+  <!-- Post content -->
+  <div class="row">
+    <div class="columns small-12 post-content">{{ content }}</div>
+  </div>
 </div>
+<br>
