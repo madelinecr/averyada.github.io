@@ -1,6 +1,6 @@
 require 'html/proofer'
 
-task :default => :dev
+task :default => :test
 
 STAGECONF = "_config.yml,_config-staging.yml"
 STAGETARGET = "local.ens.ae:~/public_html/blog-staging/"
