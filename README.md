@@ -1,4 +1,4 @@
-# pacebl.github.io
+# [pacebl.github.io](http://pacebl.github.io/)
 
 [![Travis CI Badge][travisbadge]][travis]
 
