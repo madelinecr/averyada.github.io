@@ -9,9 +9,7 @@ satisfying my curiosity. I'm especially likely to impulsively buy a title like
 this when it's brief enough I know I'll be able to finish it in a couple
 sittings.
 
-<div class="float-right" markdown="1">
-  ![The Tao of Pooh](/img/thumb_tao_of_pooh.jpg)
-</div>
+{% include img-l.html pic="/img/tao-of-pooh.jpg" alt="The Tao of Pooh" %}
 
 The Tao of Pooh is a book which attempts to explain Taoism through the
 characters and events in Winnie The Pooh. This truly shows itself to be a great
@@ -34,4 +32,4 @@ educational value and insight into Eastern philosophy.
 > "If we add up all the rewards in our lives, we won't have very much. But if we
 > add up the spaces between the rewards, we'll come up with quite a bit."
 
-[1]:[http://www.amazon.com/The-Tao-of-Pooh/dp/089867154X/ref=sr_1_5?ie=UTF8&qid=1358393208&sr=8-5&keywords=The+Tao+of+Pooh]
+[1]:http://www.amazon.com/The-Tao-of-Pooh/dp/089867154X/ref=sr_1_5?ie=UTF8&qid=1358393208&sr=8-5&keywords=The+Tao+of+Pooh
