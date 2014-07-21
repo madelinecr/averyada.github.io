@@ -8,7 +8,7 @@ highlighter: pygments
 markdown: kramdown
 paginate: 3
 relative_permalinks: true
-exclude: ['Rakefile', 'README.md']
+exclude: ['vendor', 'Rakefile', 'README.md']
 redcloth:
   hard_breaks: false
 gems:
