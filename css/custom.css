@@ -17,11 +17,14 @@
   .postlist-item {
     text-align: center; } }
 @media only screen and (max-width: 64em) {
-  .post-title {
-    text-align: center; }
+  #content {
+    padding-bottom: 60px; }
 
-  #entypo-attribution {
-    float: none;
+  #footer {
+    margin-top: -42px;
+    height: 42px; }
+
+  .post-title {
     text-align: center; }
 
   .post-date {
@@ -34,8 +37,12 @@
   .postlist-date {
     text-align: right; } }
 @media only screen and (min-width: 64.063em) {
-  #entypo-attribution {
-    float: right; }
+  #content {
+    padding-bottom: 100px; }
+
+  #footer {
+    margin-top: -84px;
+    height: 84px; }
 
   .post-date {
     text-align: center; } }
@@ -46,8 +53,7 @@
   min-height: 100%; }
 
 #content {
-  overflow: auto;
-  padding-bottom: 75px; }
+  overflow: auto; }
 
 #title h1 {
   font-family: capsuula;
@@ -145,21 +151,43 @@ ul, #projects {
   border-style: solid;
   border-color: #d3d3d3; }
 
-#pagination div {
-  text-align: center; }
+#pagination {
+  margin: 1em 0 1em 0; }
+  #pagination div {
+    text-align: center; }
 
 #footer {
   position: relative;
-  margin-top: -42px;
   padding: 1em;
-  height: 42px;
   clear: both;
   text-align: center;
-  background-color: #ddd;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
   font-size: 10pt; }
 
-#footer #quote {
+#entypo-attribution {
+  font-size: 10pt;
+  padding-top: 0.2em;
+  text-align: right; }
+
+#footernav {
+  text-align: left;
   float: left; }
+
+#footernav span {
+  font-size: 18pt;
+  color: #222;
+  line-height: 0; }
+
+#footernav label {
+  display: inline;
+  padding-right: 1em; }
+
+#footernav span.divider {
+  color: #888; }
+
+#footer #quote {
+  padding-bottom: 1.3em; }
 
 #bio {
   margin-top: 30px; }
@@ -242,12 +270,12 @@ pre {
   background-color: #ebebeb;
   margin-bottom: 1em; }
 
-a:hover {
+.post a:hover {
   border: 0;
   border-bottom: 1px;
   border-style: dotted; }
 
-a, a:visited {
+.post a, a:visited {
   font-weight: bold;
   color: #242424; }
 
