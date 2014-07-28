@@ -1,3 +1,5 @@
+---
+---
 
 $icon-bar-bg: #000000;
 $icon-bar-font-size: 7rem;
@@ -339,9 +341,13 @@ ul, #projects {
 /* Text body styling */
 
 pre {
+  padding: 0.1em;
   border-width: 1px;
   border-style: solid;
   border-color: #d3d3d3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }
 
 .highlight, pre {
