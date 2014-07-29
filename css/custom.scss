@@ -4,6 +4,9 @@
 $icon-bar-bg: #000000;
 $icon-bar-font-size: 7rem;
 
+$darkgray1: #444;
+$darkgray2: #222;
+
 @font-face {
   font-family: capsuula;
   src: url(../font/Capsuula.ttf);
@@ -36,7 +39,7 @@ $icon-bar-font-size: 7rem;
 
 // Mobile and tablet only styling
 @media only screen and (max-width: 64em) {
-  #content {
+  #wrapper {
     padding-bottom: 60px;
   }
   #footer {
@@ -47,8 +50,8 @@ $icon-bar-font-size: 7rem;
     text-align: center;
   }
   .post-date {
-    padding: 1em;
-    text-align: left;
+    padding: 0.2em;
+    text-align: center;
   }
 }
 
@@ -64,7 +67,7 @@ $icon-bar-font-size: 7rem;
 
 // Desktops only styling
 @media only screen and (min-width: 64.063em) {
-  #content {
+  #wrapper {
     padding-bottom: 100px;
   }
   #footer {
@@ -72,7 +75,7 @@ $icon-bar-font-size: 7rem;
     height: 84px;
   }
   .post-date {
-    //padding-top: 1.5em;
+    padding: 0.5em;
     text-align: center;
   }
 }
@@ -81,20 +84,27 @@ $icon-bar-font-size: 7rem;
  * Layout Styling
  */
 
+#titlebg {
+  background: url('../img/mechintegrator.jpg');
+  background-position: 60% 50%;
+  background-size: 1920px;
+  border-bottom: 1px solid #999;
+}
+
 #main {
   min-height: 100%;
 }
 
-#content {
+#wrapper {
   overflow: auto;
-  //padding-bottom: 100px;
 }
 
 #title h1 {
   font-family: capsuula;
   margin: 0.2em;
-  /*color: #22226b;*/
+  color: #ffffff;
   text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 64pt;
 }
 
@@ -104,92 +114,57 @@ $icon-bar-font-size: 7rem;
   bottom: -220px;
 }
 
+#navbg {
+  background-color: #eee;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+}
+
 #nav {
   text-align: center;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: #ddd;
-  margin-bottom: 1.5em;
-  //border: 1px solid #ddd;
+}
+
+#nav li {
+  padding-top: 1.5em;
+}
+
+#nav li a {
+  //padding: 0.3em;
 }
 
 #nav hr {
   margin-top: 0;
 }
 
-#home {
+#home, #posts, #projects, #about {
   font-family: entypo;
   font-weight: normal;
   font-size: 30pt;
   line-height: 0;
-  color: #D3D3D3;
+  color: #444;
 }
 
-#posts {
-  font-family: entypo;
-  font-weight: normal;
-  font-size: 30pt;
-  line-height: 0;
-  color: #D3D3D3;
+#nav li:hover {
+  background-color: #7D6040;
 }
 
-#projects {
-  font-family: entypo;
-  font-weight: normal;
-  font-size: 30pt;
-  line-height: 0;
-  color: #D3D3D3;
+#nav li:hover span {
+  color: #FFF;
 }
 
-#about {
-  font-family: entypo;
-  font-weight: normal;
-  font-size: 30pt;
-  line-height: 0;
-  color: #D3D3D3;
+#nav li:hover label {
+  color: #FFF;
 }
 
-#home label {
+#nav label {
   font-family: "TeX Gyre Heros";
   font-weight: bold;
   font-size: 16px;
   margin-top: -10px;
   color: #222222;
-}
-
-#posts label {
-  font-family: "TeX Gyre Heros";
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: -10px;
-  color: #222222;
-}
-
-#projects label {
-  font-family: "TeX Gyre Heros";
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: -10px;
-  color: #222222;
-}
-
-#about label {
-  font-family: "TeX Gyre Heros";
-  font-weight: bold;
-  font-size: 16px;
-  margin-top: -10px;
-  color: #222222;
-}
-
-#navigation {
-  background-color: rgba(246,246,246,1);
-  text-align: center;
-  /*color: #22226b;*/
-}
-
-#navigation label {
-  font-weight: bold;
-  color: #333333;
 }
 
 ul, #projects {
@@ -201,6 +176,10 @@ ul, #projects {
   border-width: 1px;
   border-style: solid;
   border-color: #d3d3d3;
+}
+
+#content {
+  margin-top: 1.5em;
 }
 
 #pagination {
@@ -340,6 +319,15 @@ ul, #projects {
 
 /* Text body styling */
 
+a {
+  color: #333333;
+}
+
+a:visited {
+  font-weight: bold;
+  color: #333333;
+}
+
 pre {
   padding: 0.1em;
   border-width: 1px;
@@ -356,15 +344,19 @@ pre {
 }
 
 .post a:hover {
-  //text-decoration: underline;
   border: 0;
   border-bottom: 1px;
-  border-style: dotted;
+  border-style: solid;
 }
 
-.post a, a:visited {
+.post a {
   font-weight: bold;
-  color: #242424;
+  color: #301300;
+}
+
+.post a:visited {
+  font-weight: bold;
+  color: #170000;
 }
 
 code {

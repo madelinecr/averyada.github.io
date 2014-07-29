@@ -54,12 +54,17 @@
       -->
     <!-- Rest of site -->
     <div id="main">
-      <div id="content">
-        <div class="row">
-          <!-- Title -->
-          <div id="title" class="columns small-12">
-            <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+      <div id="wrapper">
+        <div id="titlebg">
+          <div class="row">
+            <!-- Title -->
+            <div id="title" class="columns small-12">
+              <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+            </div>
           </div>
+        </div>
+        <div id="navbg">
+        <div class="row">
           <div id="nav" class="columns small-centered small-6 large-8">
             <ul id="navlist" class="small-block-grid-2 medium-block-grid-4">
               <li>
@@ -88,9 +93,13 @@
               </li>
             </ul>
           </div>
+          </div>
+        </div>
           <!-- Content -->
-          <div class="columns small-centered small-9">
-            {{ content }}
+          <div class="row">
+            <div id="content" class="columns small-centered small-9">
+              {{ content }}
+            </div>
           </div>
         </div>
       </div>
