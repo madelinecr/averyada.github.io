@@ -6,26 +6,19 @@ layout: default
   <div class="post">
     <!-- Post header -->
     <div class="row">
-      <div class="columns small-12 large-uncentered large-10">
+      <div class="columns small-12 large-uncentered large-9">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <h1 class="post-title">{{ post.title }}</h1>
         </a>
       </div>
-      <div class="columns small-6 large-uncentered large-2">
-        <span class="entypo-social right">&#62222;</span>
-        <span class="entypo-social right">&#62223;</span>
-        <span class="entypo-social right">&#62217;</span>
-      </div>
-      <div class="row">
-        <div class="columns small-6 medium-6 large-centered post-date">
-          {{ post.date | date:"%B %d, %Y" }}
-        </div>
+      <div class="columns small-12 large-3 post-date">
+        <div>{{ post.date | date:"%B %d, %Y" }}</div>
       </div>
     </div>
     <br>
     <!-- Post content -->
     <div class="row">
-      <div class="columns small-12 post-content">{{ post.content }}</div>
+      <div class="columns small-12 post-content">{{ post.excerpt }}</div>
     </div>
   </div>
   <hr>
