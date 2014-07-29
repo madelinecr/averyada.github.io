@@ -1,5 +1,5 @@
 ---
-title: Customizing Your Vagrant Environments
+title: Custom Environments for Vagrant
 layout: post
 date: '2014-06-13 20:49:21'
 ---
