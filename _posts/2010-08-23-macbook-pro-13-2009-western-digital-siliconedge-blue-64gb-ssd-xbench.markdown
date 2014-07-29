@@ -1,14 +1,14 @@
 ---
 date: 2010-08-23 19:10:19+00:00
 layout: post
-title: Macbook Pro 13" 2009 + Western Digital SiliconEdge Blue 64GB SSD XBench
+title: Macbook Pro 2009 + Western Digital SiliconEdge Blue
 categories:
 - Software
 tags:
 - mac
 ---
 
-I recently received a WD SiliconEdge Blue 64GB for a birthday gift and I
+I recently received a WD SiliconEdge Blue 64GB SSD for a birthday gift and I
 installed it in my 2009 13" Macbook Pro. Here are my HDD xbench results.
 
     Results 245.22
