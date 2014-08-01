@@ -117,7 +117,7 @@ and before the `@` symbols below. This is useful for filtering these automated
 messages.
 
     root:your.name+rootbpace@gmail.com
-    sensae:your.name+bpace@gmail.com
+    bpace:your.name+bpace@gmail.com
 
 Even if you don't want to add a label, for each user account you want to receive
 email from you need to add a `revaliases` entry pointing to your address. If you
