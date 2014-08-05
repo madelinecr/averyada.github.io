@@ -64,46 +64,45 @@
           </div>
         </div>
         <div id="navbg">
-        <div class="row">
-          <div id="nav" class="columns small-centered small-6 large-8">
-            <ul id="navlist" class="small-block-grid-2 medium-block-grid-4">
-              <li>
-                <a id="home" href="{{ site.baseurl }}/index.html">
-                  <span>&#8962;</span>
-                  <label>Home</label>
-                </a>
-              </li>
-              <li>
-                <a id="posts" href="{{ site.baseurl }}/posts.html">
-                  <span>&#9776;</span>
-                  <label>Archive</label>
-                </a>
-              </li>
-              <li>
-                <a id="projects" href="{{ site.baseurl }}/projects.html">
-                  <span>&#9000;</span>
-                  <label>Projects</label>
-                </a>
-              </li>
-              <li>
-                <a id="about" href="{{ site.baseurl }}/about.html">
-                  <span>&#128100;</span>
-                  <label>About</label>
-                </a>
-              </li>
-            </ul>
-          </div>
-          </div>
-        </div>
-          <!-- Content -->
           <div class="row">
-            <div id="content" class="columns small-centered small-12 large-9">
-              {{ content }}
+            <div id="nav" class="columns small-centered small-6 large-8">
+              <ul id="navlist" class="small-block-grid-2 medium-block-grid-4">
+                <li>
+                  <a id="home" href="{{ site.baseurl }}/index.html">
+                    <span>&#8962;</span>
+                    <label>Home</label>
+                  </a>
+                </li>
+                <li>
+                  <a id="posts" href="{{ site.baseurl }}/posts.html">
+                    <span>&#9776;</span>
+                    <label>Archive</label>
+                  </a>
+                </li>
+                <li>
+                  <a id="projects" href="{{ site.baseurl }}/projects.html">
+                    <span>&#9000;</span>
+                    <label>Projects</label>
+                  </a>
+                </li>
+                <li>
+                  <a id="about" href="{{ site.baseurl }}/about.html">
+                    <span>&#128100;</span>
+                    <label>About</label>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div> <!-- end navbg -->
+        <!-- Content -->
+        <div class="row">
+          <div id="content" class="columns small-centered small-12 large-9">
+            {{ content }}
+          </div>
         </div>
+        {% include adsense1.html %}
       </div>
-      {% include adsense1.html %}
     </div>
 
     <footer id="footer">
@@ -156,7 +155,7 @@
     <noscript><p><img
     alt="piwik tracking image"
     src="http://piwik.krypti.co/piwik.php?idsite=1"
-    style="border:0" alt="" /></p></noscript>
+    style="border:0" /></p></noscript>
     <!-- End Piwik Code -->
 
     <!-- Foundation JS -->
