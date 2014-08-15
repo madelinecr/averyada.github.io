@@ -2,14 +2,13 @@
 title: Automating Rtorrent - A Seedbox Guide
 layout: post
 ---
-Intermediate Torrenting: Running a Seedbox
 
-A seedbox is a nice step up from a normal torrent client if you've decided you
-want to get more serious about contributing back to your swarms. I personally
-run an rtorrent instance on my home Debian server which I've automated to a fair
-degree, which lets me seed files 24/7. I use this mostly for linux
-distributions, such as the [ArchLinux ISO][archiso], so that I can help
-contribute to the health of these open source projects.
+A seedbox is a nice step up from a normal torrent client if you want to get more
+serious about contributing back to your swarms. I personally run an rtorrent
+instance on my home Debian server. I've automated it to a fair degree, which lets
+me seed files 24/7. I use this mostly for linux distributions, such as the
+[ArchLinux ISO][archiso], so that I can help indirectly contribute to the health
+of these open source projects.
 
 I see a lot of people set up home services like this in a rather haphazard
 fashion, running a daemonized process as their administrative user and giving it
@@ -26,12 +25,12 @@ some software and add a new user:
     sudo aptitude install rtorrent screen
     sudo useradd -m rtorrent
 
-This creates a new user named rtorrent, with a default home directory.  Note
-that I didn't pass the `-p` flag, leaving this account without a password. This
-was intentional, because this account shouldn't ever be logged in to like a
-normal user. Having no password ensures that the rtorrent user can't be logged
-in directly from a TTY. We'll be setting things up initially with `su`, but we
-can add an ssh key for easy maintenance and monitoring. 
+This creates a new user named rtorrent, with a default home directory.  Note that
+I didn't pass the `-p` flag, leaving this account without a password. This was
+intentional, because this account shouldn't ever be logged in to like a normal
+user. Having no password ensures that the rtorrent user can't be logged in
+directly without an SSH key. We'll be setting things up initially with `su`, but
+we can add that ssh key at the end for easy maintenance and monitoring. 
 
 Switch to the new user with:
 
@@ -50,8 +49,7 @@ favorite editor, and add the following:
     port_range = 49152-65535
     port_random = yes
 
-    schedule =
-    watch_directory,5,5,load_start=/home/rtorrent/torrents/*.torrent
+    schedule = watch_directory,5,5,load_start=/home/rtorrent/torrents/*.torrent
     schedule = untied_directory,5,5,stop_untied=
     schedule = tied_directory,5,5,start_tied=
 
@@ -77,7 +75,10 @@ sticky with:
 
     chmod g+s finished torrents
 
-Set open group permissions with:
+This is known as the "Set Group ID" or SGID bit. Be wary of the [difference in
+sticky bits][advperm], as there is also a SUID bit and simply a 'sticky bit'. All
+three can be set independently, and do rather different things. Next, Set open
+group permissions with:
 
     chmod g+rwx finished torrents
 
@@ -103,10 +104,12 @@ crontab with `crontab -e` and add:
 
 Next, edit the `.bashrc` file and add `umask 0002`. This overrides the rtorrent
 user's default umask of 0022, which means new files created by the rtorrent user
-will have the permissions 775, or rwxrwxr-x. We're all done, take the
-opportunity (optionally) add your public key to `~/.ssh/authorized_keys` and
-`exit` the session. Then, just make sure your normal user is in the rtorrent
-group with:
+will have the permissions 775, or rwxrwxr-x. This lets anyone who is part of the
+rtorrent group to delete files in `finished`.
+
+We're all done, take the opportunity (optionally) to add your public key to
+`~/.ssh/authorized_keys` and `exit` the session. Then, just make sure your normal
+user is in the rtorrent group with:
 
     sudo usermod -Ga rtorrent username
 
@@ -120,3 +123,4 @@ you'd prefer to get them on the machine.
 
 [archiso]:https://www.archlinux.org/download/
 [PKA]:https://hkn.eecs.berkeley.edu/~dhsu/ssh_public_key_howto.html
+[advperm]:http://www.linuxhowto.in/2012/07/linux-advanced-file-permissions.html
