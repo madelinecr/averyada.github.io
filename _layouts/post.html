@@ -11,9 +11,15 @@ layout: default
       </a>
     </div>
     <div class="columns small-6 large-uncentered large-2">
-      <span class="entypo-social right">&#62222;</span>
-      <span class="entypo-social right">&#62223;</span>
-      <span class="entypo-social right">&#62217;</span>
+      <a href="http://facebook.com/sharer.php?u={{site.url}}{{page.url}}">
+        <span class="entypo-social right">&#62222;</span>
+      </a>
+      <a href="https://plus.google.com/share?url={{site.url}}{{page.url}}">
+        <span class="entypo-social right">&#62223;</span>
+      </a>
+      <a href="http://twitter.com/share?text={{page.title | cgi_escape}}&url={{site.url}}{{page.url}}">
+        <span class="entypo-social right">&#62217;</span>
+      </a>
     </div>
     <div class="row">
       <div class="columns small-6 medium-6 large-centered post-date">
