@@ -4,10 +4,10 @@ baseurl: ""
 description: "A blog about coding and technology"
 author: "Blaine Pace"
 copyright: "MIT"
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 paginate: 3
-relative_permalinks: true
+relative_permalinks: false
 exclude: [
   '.travis.yml',
   'vendor',

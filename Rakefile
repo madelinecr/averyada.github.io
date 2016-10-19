@@ -1,5 +1,6 @@
 require 'jekyll'
-require 'html/proofer'
+require 'jekyll-paginate'
+require 'html-proofer'
 
 task :default => :test
 
