@@ -133,22 +133,19 @@
       </div>
     </footer>
 
-    <!-- Piwik -->
+    <!-- Gaug.es -->
     <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
+      var _gauges = _gauges || [];
       (function() {
-        var u=(("https:" == document.location.protocol) ? "https" : "http")
-          + "://piwik.krypti.co//";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'),
-        s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript';
-        g.defer=true; g.async=true;
-        g.src=u+'piwik.js';
-        s.parentNode.insertBefore(g,s);
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '50a7f3f6f5a1f51a1d000050');
+        t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+        t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
       })();
     </script>
 
