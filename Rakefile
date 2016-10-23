@@ -11,7 +11,7 @@ STAGETARGET = "local.ens.ae:~/public_html/blog-staging/"
 desc "Tests the rendered HTML to make sure it's accurate"
 task :test do
   system('jekyll build')
-  HTML::Proofer.new('./_site', { :disable_external => true }).run
+  HTMLProofer.check_directory('./_site').run
 end
 
 desc "Starts jekyll optimized for general site development"
