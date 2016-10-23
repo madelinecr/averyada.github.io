@@ -21,3 +21,4 @@ redcloth:
   hard_breaks: false
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
