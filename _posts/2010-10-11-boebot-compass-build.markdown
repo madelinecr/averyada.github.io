@@ -11,4 +11,4 @@ tags:
 Just a quick snap my girlfriend took of my current boebot build with a  Hitachi
 HM55B compass module, LED and pushbutton. I might upload a  schematic sometime.
 
-[![A Boebot with a Hitachi HM55B Compass Module](http://bpace.info/wp-content/uploads/2011/05/boebot_compass-300x225.jpg)](http://bpace.info/wp-content/uploads/2011/05/boebot_compass.jpg)
+<!--[![A Boebot with a Hitachi HM55B Compass Module](http://bpace.info/wp-content/uploads/2011/05/boebot_compass-300x225.jpg)](http://bpace.info/wp-content/uploads/2011/05/boebot_compass.jpg)-->

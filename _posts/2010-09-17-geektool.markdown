@@ -12,7 +12,7 @@ Just a short post. I'm posting my GeekTools setup and a  screenshot. I'd make
 some note about my awk skills being hacky, but I  think anything ran through awk
 looks hacky.
 
-[![My geek tool setup](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)
+<!--[![My geek tool setup](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)](http://bpace.info/wp-content/uploads/2011/05/geektool.jpg)-->
 
     top -l1 | awk '
     BEGIN { ORS=" | " }

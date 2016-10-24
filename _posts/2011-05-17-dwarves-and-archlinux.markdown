@@ -9,6 +9,8 @@ tags:
 - gaming
 ---
 
+*Most of this article is 5 years out of date, and probably of no use*
+
 I'm a pretty avid linux user, and I try to minimize the time I spend in Windows,
 even for a game as [fun ](http://df.magmawiki.com/index.php/DF2010:Losing)as
 Dwarf Fortress. I was very happy to hear that there are linux packages available
@@ -44,8 +46,9 @@ Navigate to your ABS tree, creating some extra folders for AUR packages.
     $ cd /var/abs
     $ mkdir -p local/aur && cd local/aur
 
-The AUR package for Dwarf Therapist is located
-[here](https://aur.archlinux.org/packages.php?ID=38062). Now we'll copy the link
+The AUR package for Dwarf Therapist is located <s>here</s> (It is
+  now out of date, as is most of this article)
+<!--[here](https://aur.archlinux.org/packages.php?ID=38062)-->. Now we'll copy the link
 location of the "Tarball" link on that page, pull it to our local system,
 extract it and delete the archive.
 
