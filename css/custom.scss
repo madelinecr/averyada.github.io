@@ -32,6 +32,20 @@ $darkgray2: #222;
   #stdout:after {
     content:" ";
   }
+  // Mobile only footer styling
+  #footernav {
+    padding: 0.5em;
+  }
+  #footernav a {
+    margin: 1em;
+  }
+  #footernav a label {
+    width: 10em;
+    display: none;
+  }
+  #footernav a span {
+    font-size: 28pt;
+  }
   .postlist-item {
     text-align: center;
   }
