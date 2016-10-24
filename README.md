@@ -10,5 +10,5 @@ and working with different programming languages.
 
 [jek]: http://www.jekyllrb.com/
 [gh]:  http://www.github.com/
-[travisbadge]: https://travis-ci.org/pacebl/pacebl.github.io.svg?branch=master
+[travisbadge]: https://travis-ci.org/pacebl/pacebl.github.io.svg?branch=source
 [travis]: https://travis-ci.org/pacebl/pacebl.github.io
