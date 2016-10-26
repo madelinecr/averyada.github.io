@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="no-js" lang='en'>
+  <head>
+    <meta charset=UTF-8>
+    <title>stdout - coding and technology</title>
+    <!-- Hey you! Viewing the source on my blog? Ahead may lie gross dragons..
+         Anyway, it's dangerous to go alone,  take this!
+
+               $_______________________________$$$$$
+               $$$__________________________$$$$$$$
+               $$$_$$____________________$$$$__$$$
+               _$$___$$________________$$$$____$$
+               __$____$$_____$$$$$$$$$$$$_____$$
+               ___$$____$$$$$$$_____$$$_____$$$
+               ____$$___$_________________$$$
+               _____$$$__________________$$_____$$$$
+               ______$$____________$$$$__$$$$$$$$__$$
+               ______$__$$$$_______$$$$____$$______$$
+               _$$$$$$__$$$$__$$____$$______$____$$$
+               $$____$___$$____________$$$__$___$$$
+               _$$$__$______$$$$$$____$___$_$$$$$
+               ___$$$$_______$$__$_____$$$__$$$$$$$
+               _____$$$$______$$$$_________$______$$
+               _______$$$$______________$$________$$$$
+               ______$$__$$$___$$$$$$_____________$$$$
+               _____$$$_________________$$$$_____$$$$
+               ____$$$$$______$$$$$$$$$$$$$$$$$$$$$
+               ______$$$$$$_$$$$$$____________$$$
+               __________$$$$
+     -->
+
+    <!-- Foundation stylesheets and modernizr -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="/css/foundation.css"/>
+
+    <!-- Pygments for syntax highlighting -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/pygments.css"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/custom.css"/>
+  </head>
+
+  <!-- Gaug.es -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '50a7f3f6f5a1f51a1d000050');
+      t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+      t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  <!-- end Gaug.es -->
+
+  <body>
+
+    <!-- Top Bar -->
+    <ul class="vertical medium-horizontal menu">
+      <li class="menu-text">stdout</li>
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/posts.html">Posts</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+    <!-- End top bar -->
+
+    <!-- Rest of site -->
+<!-- old nav structure
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">stdout</li>
+          <li>
+              <a id="home" href="/index.html">
+                <span>&#8962;</span>
+                <label>Home</label>
+              </a>
+            </li>
+            <li>
+              <a id="posts" href="/posts.html">
+                <span>&#9776;</span>
+                <label>Archive</label>
+              </a>
+            </li>
+            <li>
+              <a id="projects" href="/projects.html">
+                <span>&#9000;</span>
+                <label>Projects</label>
+              </a>
+            </li>
+            <li>
+              <a id="about" href="/about.html">
+                <span>&#128100;</span>
+                <label>About</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  --><!-- end navbg -->
+
+    <div id="main">
+      <div id="wrapper">
+        <div id="titlebg">
+          <div class="row">
+            <!-- Title -->
+            <div id="title" class="columns small-12">
+              <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row">
+          <div id="content" class="columns small-centered small-12 large-9">
+            <div class="post">
+  <!-- Post header -->
+  <div class="row">
+    <div class="columns small-12 large-uncentered large-10">
+      <a href="/2013/06/10/intermediate-seeding-rtorrent.html">
+        <h1 class="post-title">Automating Rtorrent - A Seedbox Guide</h1>
+      </a>
+    </div>
+    <div class="columns small-6 large-uncentered large-2">
+      <a href="http://facebook.com/sharer.php?u=http://www.bpace.info/2013/06/10/intermediate-seeding-rtorrent.html">
+        <span class="entypo-social right">&#62222;</span>
+      </a>
+      <a href="https://plus.google.com/share?url=http://www.bpace.info/2013/06/10/intermediate-seeding-rtorrent.html">
+        <span class="entypo-social right">&#62223;</span>
+      </a>
+      <a href="http://twitter.com/share?text=Automating+Rtorrent+-+A+Seedbox+Guide&url=http://www.bpace.info/2013/06/10/intermediate-seeding-rtorrent.html">
+        <span class="entypo-social right">&#62217;</span>
+      </a>
+    </div>
+    <div class="row">
+      <div class="columns small-6 medium-6 large-centered post-date">
+        June 10, 2013
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Post content -->
+  <div class="row">
+    <div class="columns small-12 post-content"><p>A seedbox is a nice step up from a normal torrent client if you want to get more
+serious about contributing back to your swarms. I personally run an rtorrent
+instance on my home Debian server. I’ve automated it to a fair degree, which lets
+me seed files 24/7. I use this mostly for linux distributions, such as the
+<a href="https://www.archlinux.org/download/">ArchLinux ISO</a>, so that I can help indirectly contribute to the health
+of these open source projects.</p>
+
+<p>I see a lot of people set up home services like this in a rather haphazard
+fashion, running a daemonized process as their administrative user and giving it
+free reign over their home directory. Isolating processes to their own user is a
+good security practice, it can help you keep a tidier box and lower your
+cognitive strain when working with a specific service. Personally, I also find
+it easier to keep track of everything in one location.</p>
+
+<p>I’m assuming you’re running some variant of Debian on your server. The general
+setup principles are the same no matter the flavor of linux, so adjust as
+necessary based on your favorite package manager. To start out, we’ll install
+some software and add a new user:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo aptitude install rtorrent screen
+sudo useradd -m rtorrent
+</code></pre>
+</div>
+
+<p>This creates a new user named rtorrent, with a default home directory.  Note that
+I didn’t pass the <code class="highlighter-rouge">-p</code> flag, leaving this account without a password. This was
+intentional, because this account shouldn’t ever be logged in to like a normal
+user. Having no password ensures that the rtorrent user can’t be logged in
+directly without an SSH key. We’ll be setting things up initially with <code class="highlighter-rouge">su</code>, but
+we can add that ssh key at the end for easy maintenance and monitoring.</p>
+
+<p>Switch to the new user with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo su rtorrent
+</code></pre>
+</div>
+
+<p>This is a bit of a workaround but it’ll do for the initial configuration. Change
+to this user’s home directory with <code class="highlighter-rouge">cd</code>, open the file <code class="highlighter-rouge">.rtorrent.rc</code> in your
+favorite editor, and add the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>download_rate = 0
+upload_rate = 0
+
+directory = /home/rtorrent/downloads
+session = /home/rtorrent/.rtorrent/session
+
+port_range = 49152-65535
+port_random = yes
+
+schedule = watch_directory,5,5,load_start=/home/rtorrent/torrents/*.torrent
+schedule = untied_directory,5,5,stop_untied=
+schedule = tied_directory,5,5,start_tied=
+
+system.method.set_key = event.download.finished,link_complete,"execute=cp,-r,$d.get_base_path=,/home/rtorrent/finished"
+</code></pre>
+</div>
+
+<p>The first 6 configuration options are rather self explanatory. The <code class="highlighter-rouge">schedule</code>
+lines respectively set up where rtorrent should watch for files, that it should
+start those torrents when they are created, and stop them when they are deleted.
+Your session folder is where rtorrent stores its internal database that allows
+it to keep track of torrents persistently. The very last line sets up rtorrent
+to copy the finished files to a different directory. This specific option lets
+me know when torrents have finished and lets me copy them to archival media
+before clearing the temporary folder.</p>
+
+<p>So, now we need to create the necessary folders in the home directory.  We can
+do that with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>mkdir -p downloads torrents finished .rtorrent/session
+</code></pre>
+</div>
+
+<p>We also need to tweak a few settings so that rtorrent will work from the normal
+user account you logged in with. Set the <code class="highlighter-rouge">finished</code> and <code class="highlighter-rouge">torrents</code> folders group
+sticky with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chmod g+s finished torrents
+</code></pre>
+</div>
+
+<p>This is known as the “Set Group ID” or SGID bit. Be wary of the <a href="http://www.linuxhowto.in/2012/07/linux-advanced-file-permissions.html">difference in
+sticky bits</a>, as there is also a SUID bit and simply a ‘sticky bit’. All
+three can be set independently, and do rather different things. Next, Set open
+group permissions with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chmod g+rwx finished torrents
+</code></pre>
+</div>
+
+<p>This sets both folders as group writable, and the sticky permission ensures that
+files created within this folder inherit the same group.</p>
+
+<p>Having rtorrent start as the proper user on boot would be really nice, so we’ll
+create a new file called <code class="highlighter-rouge">start_rtorrent.sh</code>. Add the following:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+screen -d -m rtorrent
+</code></pre>
+</div>
+
+<p>Add executable permissions:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chmod +x start_rtorrent.sh
+</code></pre>
+</div>
+
+<p>This script starts screen, executes the command <code class="highlighter-rouge">rtorrent</code> and immediately
+detaches from the session. We still need to add this script to our crontab. To
+ensure our newly created script is called on system boot, edit rtorrent’s
+crontab with <code class="highlighter-rouge">crontab -e</code> and add:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>@reboot /home/rtorrent/start_rtorrent.sh
+</code></pre>
+</div>
+
+<p>Next, edit the <code class="highlighter-rouge">.bashrc</code> file and add <code class="highlighter-rouge">umask 0002</code>. This overrides the rtorrent
+user’s default umask of 0022, which means new files created by the rtorrent user
+will have the permissions 775, or rwxrwxr-x. This lets anyone who is part of the
+rtorrent group to delete files in <code class="highlighter-rouge">finished</code>.</p>
+
+<p>We’re all done, take the opportunity (optionally) to add your public key to
+<code class="highlighter-rouge">~/.ssh/authorized_keys</code> and <code class="highlighter-rouge">exit</code> the session. Then, just make sure your normal
+user is in the rtorrent group with:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>sudo usermod -Ga rtorrent username
+</code></pre>
+</div>
+
+<p>Now, just create symlinks pointing to <code class="highlighter-rouge">~rtorrent/torrents</code> and
+<code class="highlighter-rouge">~rtorrent/finished</code> wherever you’d like in your home directory. Drop your
+torrents in the <code class="highlighter-rouge">torrents</code> folder, and wait for the finished download to appear
+in <code class="highlighter-rouge">finished</code>. You can safely delete these downloads and they’ll still be
+seeding, living in ~rtorrent/downloads.  Personally, I access this server over
+NFS on my home LAN, but you could easily scp torrents or use any other mechanism
+you’d prefer to get them on the machine.</p>
+
+</div>
+  </div>
+</div>
+<br>
+
+          </div>
+        </div>
+        <div class="adunit_small">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-9231989683269805";
+  /* sm_banner */
+  google_ad_slot = "3508818774";
+  google_ad_width = 320;
+  google_ad_height = 50;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="show-for-large-up" id="quote">
+        <a href="http://www.catb.org/~esr/writings/unix-koans/">
+        There is more Unix-nature in one line of shell script than there is in
+        ten thousand lines of C.
+      </a>
+      </div>
+      <div class="row">
+        <div id="footernav" class="columns small-6">
+          <a href="https://www.github.com/pacebl">
+            <span class="entypo-social">&#62208;</span>
+            <label>Github</label>
+          </a>
+          <a href="https://www.twitter.com/bl_pace">
+            <span class="entypo-social">&#62217;</span>
+            <label>Twitter</label>
+          </a>
+        </div>
+        <span id="entypo-attribution" class="columns small-6">
+          <a href="http://www.entypo.com">Entypo pictograms by Daniel Bruce</a>
+        </span>
+      </div>
+    </footer>
+
+
+
+    <!-- Foundation JS -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- End Foundation JS -->
+  </body>
+</html>

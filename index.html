@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="no-js" lang='en'>
+  <head>
+    <meta charset=UTF-8>
+    <title>stdout - coding and technology</title>
+    <!-- Hey you! Viewing the source on my blog? Ahead may lie gross dragons..
+         Anyway, it's dangerous to go alone,  take this!
+
+               $_______________________________$$$$$
+               $$$__________________________$$$$$$$
+               $$$_$$____________________$$$$__$$$
+               _$$___$$________________$$$$____$$
+               __$____$$_____$$$$$$$$$$$$_____$$
+               ___$$____$$$$$$$_____$$$_____$$$
+               ____$$___$_________________$$$
+               _____$$$__________________$$_____$$$$
+               ______$$____________$$$$__$$$$$$$$__$$
+               ______$__$$$$_______$$$$____$$______$$
+               _$$$$$$__$$$$__$$____$$______$____$$$
+               $$____$___$$____________$$$__$___$$$
+               _$$$__$______$$$$$$____$___$_$$$$$
+               ___$$$$_______$$__$_____$$$__$$$$$$$
+               _____$$$$______$$$$_________$______$$
+               _______$$$$______________$$________$$$$
+               ______$$__$$$___$$$$$$_____________$$$$
+               _____$$$_________________$$$$_____$$$$
+               ____$$$$$______$$$$$$$$$$$$$$$$$$$$$
+               ______$$$$$$_$$$$$$____________$$$
+               __________$$$$
+     -->
+
+    <!-- Foundation stylesheets and modernizr -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="/css/foundation.css"/>
+
+    <!-- Pygments for syntax highlighting -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/pygments.css"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/custom.css"/>
+  </head>
+
+  <!-- Gaug.es -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '50a7f3f6f5a1f51a1d000050');
+      t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+      t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  <!-- end Gaug.es -->
+
+  <body>
+
+    <!-- Top Bar -->
+    <ul class="vertical medium-horizontal menu">
+      <li class="menu-text">stdout</li>
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/posts.html">Posts</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+    <!-- End top bar -->
+
+    <!-- Rest of site -->
+<!-- old nav structure
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">stdout</li>
+          <li>
+              <a id="home" href="/index.html">
+                <span>&#8962;</span>
+                <label>Home</label>
+              </a>
+            </li>
+            <li>
+              <a id="posts" href="/posts.html">
+                <span>&#9776;</span>
+                <label>Archive</label>
+              </a>
+            </li>
+            <li>
+              <a id="projects" href="/projects.html">
+                <span>&#9000;</span>
+                <label>Projects</label>
+              </a>
+            </li>
+            <li>
+              <a id="about" href="/about.html">
+                <span>&#128100;</span>
+                <label>About</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  --><!-- end navbg -->
+
+    <div id="main">
+      <div id="wrapper">
+        <div id="titlebg">
+          <div class="row">
+            <!-- Title -->
+            <div id="title" class="columns small-12">
+              <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row">
+          <div id="content" class="columns small-centered small-12 large-9">
+            
+  <div class="post">
+    <!-- Post header -->
+    <div class="row">
+      <div class="columns small-12 large-uncentered large-9">
+        <a href="/2016/10/26/missing-images-and-out-of-date-posts.html">
+          <h1 class="post-title">Missing images and out of date posts</h1>
+        </a>
+      </div>
+      <div class="columns small-12 large-3 post-date">
+        <div>October 26, 2016</div>
+      </div>
+    </div>
+    <br>
+    <!-- Post content -->
+    <div class="row">
+      <div class="columns small-12 post-content"><p>There are a few posts that have broken images, due to having a less than
+bullet-proof image system. On top of that, some posts are just completely
+out of date due to the age of the topic it’s written about.</p>
+
+</div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="post">
+    <!-- Post header -->
+    <div class="row">
+      <div class="columns small-12 large-uncentered large-9">
+        <a href="/2014/07/29/easy-email-for-debian-sysadmins.html">
+          <h1 class="post-title">Easy Email for Debian Sysadmins</h1>
+        </a>
+      </div>
+      <div class="columns small-12 large-3 post-date">
+        <div>July 29, 2014</div>
+      </div>
+    </div>
+    <br>
+    <!-- Post content -->
+    <div class="row">
+      <div class="columns small-12 post-content"><p>If you have a Debian server, there are different reasons that you might not want
+to run a mail server, or you might not even be able to. Setting up postfix or
+sendmail can be a complicated, daunting task that not a lot of people have the
+time or interest to do. Even if you want to, if you’re running your server at
+home there’s a good chance your ISP blocks outgoing email on port 25. This is a
+simple solution for setting up outgoing-only SMTP for your server.</p>
+
+</div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="post">
+    <!-- Post header -->
+    <div class="row">
+      <div class="columns small-12 large-uncentered large-9">
+        <a href="/2014/06/26/a-simpler-issue-tracker.html">
+          <h1 class="post-title">A Simpler Issue Tracker</h1>
+        </a>
+      </div>
+      <div class="columns small-12 large-3 post-date">
+        <div>June 26, 2014</div>
+      </div>
+    </div>
+    <br>
+    <!-- Post content -->
+    <div class="row">
+      <div class="columns small-12 post-content"><p>Every project is going to start accumulating a list of things that would be nice
+to have, or that you just <em>need</em> to get around to, but not right at this moment.
+There are all sorts of tools you can use to track these things, from <a href="https://github.com/blog/831-issues-2-0-the-next-generation">Github
+Issues</a> to <a href="https://wiki.gnome.org/Apps/Tomboy/">Tomboy</a> all the way down to the lowly <code class="highlighter-rouge">todo.txt</code> file.
+That’s exactly what we’re here to talk about.</p>
+
+</div>
+    </div>
+  </div>
+  <hr>
+
+
+<div id="pagination" class="row">
+  <div class="columns small-centered small-8">
+    <div class="row">
+     <!-- No previous pages from here -->
+      <div class="columns small-2"><span>&lt;&lt;</span></div>
+    
+    <!-- Paginator counter -->
+    <div class="columns small-8">
+      <span>1 / 8</span>
+    </div>
+     <!-- Next pages exist -->
+        <div class="columns small-2">
+          <a href="/page2">&gt;&gt;</a>
+        </div>
+    
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+        <div class="adunit_small">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-9231989683269805";
+  /* sm_banner */
+  google_ad_slot = "3508818774";
+  google_ad_width = 320;
+  google_ad_height = 50;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="show-for-large-up" id="quote">
+        <a href="http://www.catb.org/~esr/writings/unix-koans/">
+        There is more Unix-nature in one line of shell script than there is in
+        ten thousand lines of C.
+      </a>
+      </div>
+      <div class="row">
+        <div id="footernav" class="columns small-6">
+          <a href="https://www.github.com/pacebl">
+            <span class="entypo-social">&#62208;</span>
+            <label>Github</label>
+          </a>
+          <a href="https://www.twitter.com/bl_pace">
+            <span class="entypo-social">&#62217;</span>
+            <label>Twitter</label>
+          </a>
+        </div>
+        <span id="entypo-attribution" class="columns small-6">
+          <a href="http://www.entypo.com">Entypo pictograms by Daniel Bruce</a>
+        </span>
+      </div>
+    </footer>
+
+
+
+    <!-- Foundation JS -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- End Foundation JS -->
+  </body>
+</html>

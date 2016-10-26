@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js" lang='en'>
+  <head>
+    <meta charset=UTF-8>
+    <title>stdout - coding and technology</title>
+    <!-- Hey you! Viewing the source on my blog? Ahead may lie gross dragons..
+         Anyway, it's dangerous to go alone,  take this!
+
+               $_______________________________$$$$$
+               $$$__________________________$$$$$$$
+               $$$_$$____________________$$$$__$$$
+               _$$___$$________________$$$$____$$
+               __$____$$_____$$$$$$$$$$$$_____$$
+               ___$$____$$$$$$$_____$$$_____$$$
+               ____$$___$_________________$$$
+               _____$$$__________________$$_____$$$$
+               ______$$____________$$$$__$$$$$$$$__$$
+               ______$__$$$$_______$$$$____$$______$$
+               _$$$$$$__$$$$__$$____$$______$____$$$
+               $$____$___$$____________$$$__$___$$$
+               _$$$__$______$$$$$$____$___$_$$$$$
+               ___$$$$_______$$__$_____$$$__$$$$$$$
+               _____$$$$______$$$$_________$______$$
+               _______$$$$______________$$________$$$$
+               ______$$__$$$___$$$$$$_____________$$$$
+               _____$$$_________________$$$$_____$$$$
+               ____$$$$$______$$$$$$$$$$$$$$$$$$$$$
+               ______$$$$$$_$$$$$$____________$$$
+               __________$$$$
+     -->
+
+    <!-- Foundation stylesheets and modernizr -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="/css/foundation.css"/>
+
+    <!-- Pygments for syntax highlighting -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/pygments.css"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/custom.css"/>
+  </head>
+
+  <!-- Gaug.es -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '50a7f3f6f5a1f51a1d000050');
+      t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+      t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  <!-- end Gaug.es -->
+
+  <body>
+
+    <!-- Top Bar -->
+    <ul class="vertical medium-horizontal menu">
+      <li class="menu-text">stdout</li>
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/posts.html">Posts</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+    <!-- End top bar -->
+
+    <!-- Rest of site -->
+<!-- old nav structure
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">stdout</li>
+          <li>
+              <a id="home" href="/index.html">
+                <span>&#8962;</span>
+                <label>Home</label>
+              </a>
+            </li>
+            <li>
+              <a id="posts" href="/posts.html">
+                <span>&#9776;</span>
+                <label>Archive</label>
+              </a>
+            </li>
+            <li>
+              <a id="projects" href="/projects.html">
+                <span>&#9000;</span>
+                <label>Projects</label>
+              </a>
+            </li>
+            <li>
+              <a id="about" href="/about.html">
+                <span>&#128100;</span>
+                <label>About</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  --><!-- end navbg -->
+
+    <div id="main">
+      <div id="wrapper">
+        <div id="titlebg">
+          <div class="row">
+            <!-- Title -->
+            <div id="title" class="columns small-12">
+              <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row">
+          <div id="content" class="columns small-centered small-12 large-9">
+            <div class="post">
+  <!-- Post header -->
+  <div class="row">
+    <div class="columns small-12 large-uncentered large-10">
+      <a href="/2013/12/01/sfml-game-development.html">
+        <h1 class="post-title">SFML Game Development</h1>
+      </a>
+    </div>
+    <div class="columns small-6 large-uncentered large-2">
+      <a href="http://facebook.com/sharer.php?u=http://www.bpace.info/2013/12/01/sfml-game-development.html">
+        <span class="entypo-social right">&#62222;</span>
+      </a>
+      <a href="https://plus.google.com/share?url=http://www.bpace.info/2013/12/01/sfml-game-development.html">
+        <span class="entypo-social right">&#62223;</span>
+      </a>
+      <a href="http://twitter.com/share?text=SFML+Game+Development&url=http://www.bpace.info/2013/12/01/sfml-game-development.html">
+        <span class="entypo-social right">&#62217;</span>
+      </a>
+    </div>
+    <div class="row">
+      <div class="columns small-6 medium-6 large-centered post-date">
+        December 01, 2013
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Post content -->
+  <div class="row">
+    <div class="columns small-12 post-content"><p>Recently I was sent a review copy of <a href="http://bit.ly/16aRxdl">SFML Game Development</a> by
+<a href="http://www.packtpub.com/">Packt Publishing</a>. SFML stands for the <a href="http://www.sfml-dev.org/">“Simple and Fast Multimedia
+Library”</a>, and is one of two major libraries used in 3D OpenGL graphics
+programming. The competitor to <a href="http://www.sfml-dev.org/">SFML</a> is <a href="http://www.libsdl.org/">SDL</a>, which is a C library.
+Comparatively, SFML is written in C++. I’ll cover an overview of the book’s
+contents and a quick review.</p>
+
+<!-- Hey I'm an include template -->
+<div class="show-for-large-up leftfloat inline-content">
+  <img class="panel" src="/img/sfmldev.jpg" alt="The SFML Book Cover" />
+</div>
+<div class="hide-for-large-up">
+  <div class="row">
+    <div class="columns small-8 small-centered inline-content">
+      <img class="panel" src="/img/sfmldev.jpg" alt="The SFML Book Cover" />
+    </div>
+  </div>
+</div>
+
+<p>SFML is quite complex, and so is C++. This book assumes a fairly competent
+programmer who is already familiar with most of the language constructs of C++.
+It’s recommended the reader understand variables, data types, functions,
+classes, polymorphism, pointers and templates. If you don’t, I wouldn’t
+recommend trying to learn C++ in parallel with SFML. It would be quite a
+challenge. If you don’t know C++ very well, I’d recommend <a href="http://www.amazon.com/Absolute-5th-Edition-Walter-Savitch/dp/013283071X">Absolute
+C++</a>. On to the book!</p>
+
+<p><a href="http://bit.ly/16aRxdl">SFML Game Development</a> starts off with a strong first chapter,
+covering a basic graphical “Hello world”. It covers user input using the more
+modern events API, as opposed to the old polling API. It also covers in depth
+frame independent movement and fixed time steps.</p>
+
+<p>After explaining some of the basics of getting an SFML project up and running,
+it jumps right into building a modern clone of <a href="http://www.arcade-museum.com/game_detail.php?game_id=6766">1942</a>. It covers building
+an asset pipeline, rendering scenes, getting player input, playing music,
+multiplayer code, gameplay logic, and transitioning between states such as the
+main menu, gameplay, and boss screens. It even finds some time to cover a basic
+bloom shader in <a href="https://www.opengl.org/documentation/glsl/">GLSL</a>.</p>
+
+<p>At 280 pages long, this book is short but sweet. It walks you through a complete
+project from start to finish, and gets you up and running with SFML. You’ll be
+writing your own real time graphics in no time. When I was learning SFML 1.5,
+there weren’t resources like this available. It was a much slower, more painful
+process than it is now. If you’re interested in high performance real time
+graphics programming, this would be a great book to start out with. Once you’ve
+finished this book, you’ll have a good foundation for learning OpenGL itself if
+you’re so inclined.</p>
+
+<p>For an easier start, I created a Github project with an empty SFML project
+already set up. It’s called <a href="http://www.github.com/sensae/sfml-template/">sfml-template</a>, and it uses
+<a href="http://www.cmake.org/">CMake</a> for its build system. It isn’t currently set up to build on
+Windows, but it will build on either Linux or Mac OS X. The linking of OpenGL on
+these two platforms is quite different, which is why CMake is required for
+handling building on either.</p>
+
+<p>Alright, that’s it. Go build something awesome!</p>
+
+</div>
+  </div>
+</div>
+<br>
+
+          </div>
+        </div>
+        <div class="adunit_small">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-9231989683269805";
+  /* sm_banner */
+  google_ad_slot = "3508818774";
+  google_ad_width = 320;
+  google_ad_height = 50;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="show-for-large-up" id="quote">
+        <a href="http://www.catb.org/~esr/writings/unix-koans/">
+        There is more Unix-nature in one line of shell script than there is in
+        ten thousand lines of C.
+      </a>
+      </div>
+      <div class="row">
+        <div id="footernav" class="columns small-6">
+          <a href="https://www.github.com/pacebl">
+            <span class="entypo-social">&#62208;</span>
+            <label>Github</label>
+          </a>
+          <a href="https://www.twitter.com/bl_pace">
+            <span class="entypo-social">&#62217;</span>
+            <label>Twitter</label>
+          </a>
+        </div>
+        <span id="entypo-attribution" class="columns small-6">
+          <a href="http://www.entypo.com">Entypo pictograms by Daniel Bruce</a>
+        </span>
+      </div>
+    </footer>
+
+
+
+    <!-- Foundation JS -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- End Foundation JS -->
+  </body>
+</html>

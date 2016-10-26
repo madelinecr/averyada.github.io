@@ -1,0 +1,334 @@
+@font-face {
+  font-family: capsuula;
+  src: url(../font/Capsuula.ttf); }
+@font-face {
+  font-family: entypo;
+  src: url(../font/entypo.ttf); }
+@font-face {
+  font-family: entypo-social;
+  src: url(../font/entypo-social.ttf); }
+/**
+ * Media queries
+ */
+@media only screen and (max-width: 40em) {
+  #stdout:after {
+    content: " "; }
+
+  #footernav {
+    padding: 0.5em; }
+
+  #footernav a {
+    margin: 1em; }
+
+  #footernav a label {
+    width: 10em;
+    display: none; }
+
+  #footernav a span {
+    font-size: 28pt; }
+
+  .postlist-item {
+    text-align: center; } }
+@media only screen and (max-width: 64em) {
+  #wrapper {
+    padding-bottom: 60px; }
+
+  #footer {
+    margin-top: -42px;
+    height: 42px; }
+
+  .post-title {
+    text-align: center;
+    font-size: 2.6rem; }
+
+  .post-date {
+    padding: 0.2em;
+    text-align: center; }
+
+  h2 {
+    font-size: 2.2rem; }
+
+  h3 {
+    font-size: 2.0rem; }
+
+  h4 {
+    font-size: 1.8rem; }
+
+  h5 {
+    font-size: 1.6rem; }
+
+  h6 {
+    font-size: 1.4rem; } }
+@media only screen and (min-width: 40.063em) {
+  #stdout:after {
+    content: "::"; }
+
+  .postlist-date {
+    text-align: right; } }
+@media only screen and (min-width: 64.063em) {
+  #wrapper {
+    padding-bottom: 100px; }
+
+  #footer {
+    margin-top: -84px;
+    height: 84px; }
+
+  .post-title {
+    font-size: 2.0rem; }
+
+  .post-date {
+    padding: 0.5em;
+    text-align: center; }
+
+  h2 {
+    font-size: 1.8rem; }
+
+  h3 {
+    font-size: 1.6rem; }
+
+  h4 {
+    font-size: 1.5rem; }
+
+  h5 {
+    font-size: 1.4rem; }
+
+  h6 {
+    font-size: 1.3rem; } }
+/**
+ * Layout Styling
+ */
+#titlebg {
+  background: url("../img/mechintegrator.jpg");
+  background-position: 60% 50%;
+  background-size: 1920px;
+  border-bottom: 1px solid #999; }
+
+#main {
+  min-height: 100%; }
+
+#wrapper {
+  overflow: auto; }
+
+#title h1 {
+  font-family: capsuula;
+  margin: 0.2em;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 64pt; }
+
+#subtitle h2 {
+  font-size: 12pt;
+  position: absolute;
+  bottom: -220px; }
+
+#navbg {
+  background-color: #eee;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC; }
+
+#nav {
+  text-align: center;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #ddd; }
+
+#nav li {
+  padding-top: 1.5em; }
+
+#nav hr {
+  margin-top: 0; }
+
+#home, #posts, #projects, #about {
+  font-family: entypo;
+  font-weight: normal;
+  font-size: 30pt;
+  padding-top: 30px;
+  line-height: 0;
+  color: #444; }
+
+#nav li:hover {
+  background-color: #333; }
+
+#nav li:hover span {
+  color: #FFF; }
+
+#nav li:hover label {
+  color: #FFF; }
+
+#nav label {
+  font-family: "TeX Gyre Heros";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: -10px;
+  color: #222222; }
+
+ul, #projects {
+  text-align: center; }
+
+#projects li h3 {
+  background-color: #eee;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3d3d3; }
+
+#projects li h3:hover {
+  background-color: #333; }
+  #projects li h3:hover a {
+    color: #fff; }
+
+#content {
+  margin-top: 1.5em; }
+
+#pagination {
+  margin: 1em 0 1em 0; }
+  #pagination div {
+    text-align: center; }
+
+#footer {
+  position: relative;
+  padding: 1em;
+  clear: both;
+  text-align: center;
+  background-color: #eee;
+  border-top: 1px solid #ccc;
+  font-size: 10pt; }
+
+#entypo-attribution {
+  font-size: 10pt;
+  padding-top: 0.2em;
+  text-align: right; }
+
+#footernav {
+  text-align: left;
+  float: left; }
+
+#footernav span {
+  font-size: 18pt;
+  color: #222;
+  line-height: 0; }
+
+#footernav label {
+  display: inline;
+  padding-right: 1em; }
+
+#footernav span.divider {
+  color: #888; }
+
+#footer #quote {
+  padding-bottom: 1.3em; }
+
+#bio {
+  margin-top: 30px; }
+
+#bio-photo {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+#bio-avatar {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(../img/profile.jpg) no-repeat;
+  background-size: 100%; }
+
+.adunit_small {
+  width: 320px;
+  margin: auto; }
+
+.post-title {
+  padding: 0 0 15px;
+  margin: 0; }
+
+.post-date {
+  color: #333333; }
+
+.inline-content {
+  text-align: center; }
+
+.postlist-item {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  margin-left: 3em;
+  border-bottom: 1px dashed #ddd; }
+
+.postlist-link h1 {
+  font-size: 18pt;
+  margin: 0; }
+
+.postlist-date {
+  margin: auto;
+  padding-top: 0.7em;
+  height: 100%; }
+
+.leftfloat {
+  margin: 1em 1em 1em 0;
+  float: left;
+  width: 40%; }
+
+.inline-image {
+  width: 100%;
+  margin: auto;
+  padding: 1em;
+  text-align: center; }
+
+.entypo {
+  font-family: entypo;
+  font-weight: normal;
+  font-size: 36pt;
+  padding: 2px;
+  color: #D3D3D3; }
+
+.entypo-social {
+  font-family: entypo-social;
+  font-weight: normal;
+  font-size: 36pt;
+  padding: 2px;
+  color: #D3D3D3; }
+
+.entypo:hover, .entypo-social:hover {
+  color: #333333; }
+
+/* Text body styling */
+a {
+  color: #333333; }
+
+a:visited {
+  font-weight: bold;
+  color: #333333; }
+
+pre {
+  padding: 0.1em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px; }
+
+.highlight, pre {
+  background-color: #ebebeb;
+  margin-bottom: 1em; }
+
+.post a:hover {
+  border: 0;
+  border-bottom: 1px;
+  border-style: solid; }
+
+.post a {
+  font-weight: bold;
+  color: #301300; }
+
+.post a:visited {
+  font-weight: bold;
+  color: #170000; }
+
+code {
+  font-weight: normal;
+  line-height: 1.2em;
+  background-color: #ebebeb;
+  color: #202020; }

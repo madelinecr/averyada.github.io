@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="no-js" lang='en'>
+  <head>
+    <meta charset=UTF-8>
+    <title>stdout - coding and technology</title>
+    <!-- Hey you! Viewing the source on my blog? Ahead may lie gross dragons..
+         Anyway, it's dangerous to go alone,  take this!
+
+               $_______________________________$$$$$
+               $$$__________________________$$$$$$$
+               $$$_$$____________________$$$$__$$$
+               _$$___$$________________$$$$____$$
+               __$____$$_____$$$$$$$$$$$$_____$$
+               ___$$____$$$$$$$_____$$$_____$$$
+               ____$$___$_________________$$$
+               _____$$$__________________$$_____$$$$
+               ______$$____________$$$$__$$$$$$$$__$$
+               ______$__$$$$_______$$$$____$$______$$
+               _$$$$$$__$$$$__$$____$$______$____$$$
+               $$____$___$$____________$$$__$___$$$
+               _$$$__$______$$$$$$____$___$_$$$$$
+               ___$$$$_______$$__$_____$$$__$$$$$$$
+               _____$$$$______$$$$_________$______$$
+               _______$$$$______________$$________$$$$
+               ______$$__$$$___$$$$$$_____________$$$$
+               _____$$$_________________$$$$_____$$$$
+               ____$$$$$______$$$$$$$$$$$$$$$$$$$$$
+               ______$$$$$$_$$$$$$____________$$$
+               __________$$$$
+     -->
+
+    <!-- Foundation stylesheets and modernizr -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/normalize.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="/css/foundation.css"/>
+
+    <!-- Pygments for syntax highlighting -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/pygments.css"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css"
+          href="/css/custom.css"/>
+  </head>
+
+  <!-- Gaug.es -->
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '50a7f3f6f5a1f51a1d000050');
+      t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+      t.src = 'https://d36ee2fcip1434.cloudfront.net/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+  <!-- end Gaug.es -->
+
+  <body>
+
+    <!-- Top Bar -->
+    <ul class="vertical medium-horizontal menu">
+      <li class="menu-text">stdout</li>
+      <li>
+        <a href="/index.html">Home</a>
+      </li>
+      <li>
+        <a href="/posts.html">Posts</a>
+      </li>
+      <li>
+        <a href="/projects.html">Projects</a>
+      </li>
+      <li>
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+    <!-- End top bar -->
+
+    <!-- Rest of site -->
+<!-- old nav structure
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">stdout</li>
+          <li>
+              <a id="home" href="/index.html">
+                <span>&#8962;</span>
+                <label>Home</label>
+              </a>
+            </li>
+            <li>
+              <a id="posts" href="/posts.html">
+                <span>&#9776;</span>
+                <label>Archive</label>
+              </a>
+            </li>
+            <li>
+              <a id="projects" href="/projects.html">
+                <span>&#9000;</span>
+                <label>Projects</label>
+              </a>
+            </li>
+            <li>
+              <a id="about" href="/about.html">
+                <span>&#128100;</span>
+                <label>About</label>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>  --><!-- end navbg -->
+
+    <div id="main">
+      <div id="wrapper">
+        <div id="titlebg">
+          <div class="row">
+            <!-- Title -->
+            <div id="title" class="columns small-12">
+              <h1><span id="stdout">stdout</span>Coding and Technology</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="row">
+          <div id="content" class="columns small-centered small-12 large-9">
+            <div class="post">
+  <!-- Post header -->
+  <div class="row">
+    <div class="columns small-12 large-uncentered large-10">
+      <a href="/coding/2010/08/11/mix-2-parts-python.html">
+        <h1 class="post-title">Mix 2 Parts Python</h1>
+      </a>
+    </div>
+    <div class="columns small-6 large-uncentered large-2">
+      <a href="http://facebook.com/sharer.php?u=http://www.bpace.info/coding/2010/08/11/mix-2-parts-python.html">
+        <span class="entypo-social right">&#62222;</span>
+      </a>
+      <a href="https://plus.google.com/share?url=http://www.bpace.info/coding/2010/08/11/mix-2-parts-python.html">
+        <span class="entypo-social right">&#62223;</span>
+      </a>
+      <a href="http://twitter.com/share?text=Mix+2+Parts+Python&url=http://www.bpace.info/coding/2010/08/11/mix-2-parts-python.html">
+        <span class="entypo-social right">&#62217;</span>
+      </a>
+    </div>
+    <div class="row">
+      <div class="columns small-6 medium-6 large-centered post-date">
+        August 11, 2010
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- Post content -->
+  <div class="row">
+    <div class="columns small-12 post-content"><p>I’ve had a personal project in Panda3D in the works on and off (mostly off) for
+the past few months mostly as a leisure activity. It’s a very elegant engine to
+work in, but the scene graph concept is one that can be difficult to grasp at
+first.</p>
+
+<p>It’s nonintuitive dealing with NodePaths, ActorNodes, PandaNodes, GeomNodes and
+keeping all of them straight. However, the most appealing aspect of Panda3D and
+one of the main benefits to it’s usability is the fact it exposes it’s APIs in
+Python.</p>
+
+<p>Playing around in the interactive python interpreter and leveraging a debug
+function makes learning a lot less painful. For example:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; import direct.directbase.DirectStart
+&gt;&gt;&gt; from panda3d.core import *
+&gt;&gt;&gt; pn = PandaNode("MyPandaNode")
+&gt;&gt;&gt; Node = NodePath(pn)
+&gt;&gt;&gt; Node.ls()
+PandaNode MyPandaNode
+&gt;&gt;&gt; Node2 = Node.attachNewNode(PandaNode("MySecondPandaNode"))
+&gt;&gt;&gt; Node2.ls()
+PandaNode MySecondPandaNode
+&gt;&gt;&gt; Node.ls()
+PandaNode MyPandaNode
+PandaNode MySecondPandaNode
+&gt;&gt;&gt; Node.reparentTo(render)
+&gt;&gt;&gt; render.ls()
+PandaNode render S:(CullFaceAttrib RescaleNormalAttrib)
+ModelNode camera
+Camera cam ( PerspectiveLens )
+PerspectiveLens fov = 38.5468 30
+PandaNode MyPandaNode
+PandaNode MySecondPandaNode
+</code></pre>
+</div>
+
+<p>Following the above steps was crucial to my understanding of the scene graph
+hierarchy, and being able to interactively list that hierarchy as the tree is
+manipulated is a huge selling point when it comes to learning ease.</p>
+
+<p>For me, thinking of a NodePath as a pointer to a node made the engine concepts
+much less confusing, and this real time interaction made it much easier to
+figure out how NodePaths and nodes behave.</p>
+</div>
+  </div>
+</div>
+<br>
+
+          </div>
+        </div>
+        <div class="adunit_small">
+  <script type="text/javascript"><!--
+  google_ad_client = "ca-pub-9231989683269805";
+  /* sm_banner */
+  google_ad_slot = "3508818774";
+  google_ad_width = 320;
+  google_ad_height = 50;
+  //-->
+  </script>
+  <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script>
+</div>
+
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="show-for-large-up" id="quote">
+        <a href="http://www.catb.org/~esr/writings/unix-koans/">
+        There is more Unix-nature in one line of shell script than there is in
+        ten thousand lines of C.
+      </a>
+      </div>
+      <div class="row">
+        <div id="footernav" class="columns small-6">
+          <a href="https://www.github.com/pacebl">
+            <span class="entypo-social">&#62208;</span>
+            <label>Github</label>
+          </a>
+          <a href="https://www.twitter.com/bl_pace">
+            <span class="entypo-social">&#62217;</span>
+            <label>Twitter</label>
+          </a>
+        </div>
+        <span id="entypo-attribution" class="columns small-6">
+          <a href="http://www.entypo.com">Entypo pictograms by Daniel Bruce</a>
+        </span>
+      </div>
+    </footer>
+
+
+
+    <!-- Foundation JS -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+    <!-- End Foundation JS -->
+  </body>
+</html>
