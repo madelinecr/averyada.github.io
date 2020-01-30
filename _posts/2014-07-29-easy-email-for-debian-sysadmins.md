@@ -93,16 +93,16 @@ you're doing single address configuration, just skip this section too.
 Otherwise, the hostname field you add must match the domain name you verified
 for use with SES.
 
-    hostname=bpace.info
+    hostname=averyp.dev
 
 At this point your email should be working, and you'll receive email from
-useraccount@bpace.info for every user on the system. For example, root email
-will arrive separately. coming from root@bpace.info. If you'd like to tweak
+useraccount@averyp.dev for every user on the system. For example, root email
+will arrive separately. coming from root@averyp.dev. If you'd like to tweak
 this behavior, you can also create `/etc/ssmtp/revaliases` and add something
 similar to this:
 
-    root:servername@bpace.info
-    pacebl:servername@bpace.info
+    root:servername@averyp.dev
+    pacebl:servername@averyp.dev
 
 You don't need the `revaliases` file though, and everything should be working at
 this point. The only thing left is to filter away these emails to your heart's
@@ -116,8 +116,8 @@ You can add a label to the verified address, which is the portion after the `+`
 and before the `@` symbols below. This is useful for filtering these automated
 messages.
 
-    root:your.name+rootbpace@gmail.com
-    bpace:your.name+bpace@gmail.com
+    root:your.name+rootaveryada@gmail.com
+    averyada:your.name+averyada@gmail.com
 
 Even if you don't want to add a label, for each user account you want to receive
 email from you need to add a `revaliases` entry pointing to your address. If you
